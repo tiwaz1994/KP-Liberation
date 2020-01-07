@@ -13,7 +13,7 @@
         <!-- Portuguese localization made by NomadRomeo: https://github.com/NomadRomeo -->
         <!-- Korean localization made by Panzer: https://github.com/PanzerKoLee -->
         <Key ID="STR_MISSION_TITLE">
-            <Original>CTI 34 KP Liberation v0.96.6</Original>
+            <Original>CTI 40 KP Liberation Svartmarka v0.96.6</Original>
         </Key>
         <Key ID="STR_MISSION_VERSION">
             <Original>v0.96.6</Original>
@@ -3238,14 +3238,19 @@
             &lt;t size='1.3' color='#ffa000'&gt;FOB HUNTING&lt;/t&gt;
             &lt;br/&gt;&lt;br/&gt;
             &lt;t size='1'&gt;
-            OPFOR forces use an array of small logistic bases situated behind the front lines. Destroying those assets would greatly disrupt the OPFOR supply lines and impair their capacity to react to our actions.&lt;/t&gt;
+            &lt;br/&gt;
+            OPFOR forces use an array of small logistic bases situated behind the front lines.&lt;br/&gt;
+            Destroying those assets would greatly disrupt the OPFOR supply lines and impair their capacity to react to our actions.&lt;/t&gt;
             &lt;br/&gt;&lt;br/&gt;
             &lt;t size='1'&gt;
-            Your mission is to destroy all supply assets (trucks, containers) at the objective by any means at your disposal. Unfortunately our intelligence is not able to provide you with a precise position for the base, you will have to locate the objective in the red zone on your map.&lt;/t&gt;
+            &lt;br/&gt;
+            Your mission is to destroy all supply assets (trucks, containers) at the objective by any means at your disposal.&lt;br/&gt;
+            Unfortunately our intelligence is not able to provide you with a precise position for the base,&lt;br/&gt;
+            you will have to locate the objective in the red zone on your map.&lt;/t&gt;
             &lt;br/&gt;&lt;br/&gt;
             &lt;t size='1.15' color='#00a0ff'&gt;Cost: 15&lt;img image='\A3\Ui_f\data\GUI\Cfg\Ranks\general_gs.paa'/&gt;&lt;/t&gt;
             &lt;br/&gt;
-            &lt;t size='1.15' color='#ffa000'&gt;Reward: OPFOR alert level reduced by 40%&lt;/t&gt;
+            &lt;t size='1.15' color='#ffa000'&gt;Reward: OPFOR alert level reduced by 50%&lt;/t&gt;
             &lt;br/&gt;&lt;br/&gt;
             &lt;t size='10'&gt;&lt;img image='res\secondary\fob_obj.jpg'/&gt;&lt;/t&gt;
             </Original>
@@ -3260,7 +3265,7 @@
             &lt;br/&gt;&lt;br/&gt;
             &lt;t size='1.15' color='#00a0ff'&gt;Coût: 15&lt;img image='\A3\Ui_f\data\GUI\Cfg\Ranks\general_gs.paa'/&gt;&lt;/t&gt;
             &lt;br/&gt;
-            &lt;t size='1.15' color='#ffa000'&gt;Récompense: niveau d'alerte de l'OPFOR réduit de 40%&lt;/t&gt;
+            &lt;t size='1.15' color='#ffa000'&gt;Récompense: niveau d'alerte de l'OPFOR réduit de 50%&lt;/t&gt;
             &lt;br/&gt;&lt;br/&gt;
             &lt;t size='10'&gt;&lt;img image='res\secondary\fob_obj.jpg'/&gt;&lt;/t&gt;
             </French>
@@ -3275,7 +3280,7 @@
             &lt;br/&gt;&lt;br/&gt;
             &lt;t size='1.15' color='#00a0ff'&gt;Kosten: 15&lt;img image='\A3\Ui_f\data\GUI\Cfg\Ranks\general_gs.paa'/&gt;&lt;/t&gt;
             &lt;br/&gt;
-            &lt;t size='1.15' color='#ffa000'&gt;Belohnung: OPFOR Alarmstatus wird um 40% reduziert&lt;/t&gt;
+            &lt;t size='1.15' color='#ffa000'&gt;Belohnung: OPFOR Alarmstatus wird um 50% reduziert&lt;/t&gt;
             &lt;br/&gt;&lt;br/&gt;
             &lt;t size='10'&gt;&lt;img image='res\secondary\fob_obj.jpg'/&gt;&lt;/t&gt;
             </German>
@@ -3290,7 +3295,7 @@
             &lt;br/&gt;&lt;br/&gt;
             &lt;t size='1.15' color='#00a0ff'&gt;Cost: 15&lt;img image='\A3\Ui_f\data\GUI\Cfg\Ranks\general_gs.paa'/&gt;&lt;/t&gt;
             &lt;br/&gt;
-            &lt;t size='1.15' color='#ffa000'&gt;Recompensa: nivel de alerta del OPFOR reducido en un 40%&lt;/t&gt;
+            &lt;t size='1.15' color='#ffa000'&gt;Recompensa: nivel de alerta del OPFOR reducido en un 50%&lt;/t&gt;
             &lt;br/&gt;&lt;br/&gt;
             &lt;t size='10'&gt;&lt;img image='res\secondary\fob_obj.jpg'/&gt;&lt;/t&gt;
             </Spanish>
@@ -3301,7 +3306,7 @@
             &lt;br/&gt;&lt;br/&gt;
             &lt;t size='1.15' color='#00a0ff'&gt;Стоимость: 15&lt;img image='\A3\Ui_f\data\GUI\Cfg\Ranks\general_gs.paa'/&gt;&lt;/t&gt;
             &lt;br/&gt;
-            &lt;t size='1.15' color='#ffa000'&gt;Награда: уровень обеспокоенности OPFOR уменьшится на 40%&lt;/t&gt;
+            &lt;t size='1.15' color='#ffa000'&gt;Награда: уровень обеспокоенности OPFOR уменьшится на 50%&lt;/t&gt;
             &lt;br/&gt;&lt;br/&gt;
             &lt;t size='10'&gt;&lt;img image='res\secondary\fob_obj.jpg'/&gt;&lt;/t&gt;
             </Russian>
@@ -3316,7 +3321,7 @@
             &lt;br/&gt;&lt;br/&gt;
             &lt;t size='1.15' color='#00a0ff'&gt;Cost: 15&lt;img image='\A3\Ui_f\data\GUI\Cfg\Ranks\general_gs.paa'/&gt;&lt;/t&gt;
             &lt;br/&gt;
-            &lt;t size='1.15' color='#ffa000'&gt;Ricompensa: livello di allerta OPFOR ridotto del 40%&lt;/t&gt;
+            &lt;t size='1.15' color='#ffa000'&gt;Ricompensa: livello di allerta OPFOR ridotto del 50%&lt;/t&gt;
             &lt;br/&gt;&lt;br/&gt;
             &lt;t size='10'&gt;&lt;img image='res\secondary\fob_obj.jpg'/&gt;&lt;/t&gt;
             </Italian>
@@ -3361,7 +3366,7 @@
             &lt;br/&gt;&lt;br/&gt;
             &lt;t size='1.15' color='#00a0ff'&gt;Maliyet: 15&lt;img image='\A3\Ui_f\data\GUI\Cfg\Ranks\general_gs.paa'/&gt;&lt;/t&gt;
             &lt;br/&gt;
-            &lt;t size='1.15' color='#ffa000'&gt;Ödül: OPFOR uyarı seviyesi %40 a düşecek.&lt;/t&gt;
+            &lt;t size='1.15' color='#ffa000'&gt;Ödül: OPFOR uyarı seviyesi %50 a düşecek.&lt;/t&gt;
             &lt;br/&gt;&lt;br/&gt;
             &lt;t size='10'&gt;&lt;img image='res\secondary\fob_obj.jpg'/&gt;&lt;/t&gt;
         </Turkish>
@@ -3376,7 +3381,7 @@
             &lt;br/&gt;&lt;br/&gt;
             &lt;t size='1.15' color='#00a0ff'&gt;Cost: 15&lt;img image='\A3\Ui_f\data\GUI\Cfg\Ranks\general_gs.paa'/&gt;&lt;/t&gt;
             &lt;br/&gt;
-            &lt;t size='1.15' color='#ffa000'&gt;Recompensa: Alerta das forças de oposição reduzidos em 40%.&lt;/t&gt;
+            &lt;t size='1.15' color='#ffa000'&gt;Recompensa: Alerta das forças de oposição reduzidos em 50%.&lt;/t&gt;
             &lt;br/&gt;&lt;br/&gt;
             &lt;t size='10'&gt;&lt;img image='res\secondary\fob_obj.jpg'/&gt;&lt;/t&gt;
         </Portuguese>
@@ -3414,14 +3419,19 @@
             &lt;t size='1.3' color='#ffa000'&gt;CONVOY HIJACK&lt;/t&gt;
             &lt;br/&gt;&lt;br/&gt;
             &lt;t size='1'&gt;
-            OPFOR forces use road convoys to resupply their defensive positions. Intercepting one of these convoys would effectively disrupt their supply lines, and we could use the occasion to retrieve an hefty amount of ammunition.&lt;/t&gt;
+            &lt;br/&gt;
+            OPFOR forces use road convoys to resupply their defensive positions.&lt;br/&gt;
+            Intercepting one of these convoys would effectively disrupt their supply lines,&lt;br/&gt;
+            and we could use the occasion to retrieve an hefty amount of ammunition.&lt;/t&gt;
             &lt;br/&gt;&lt;br/&gt;
             &lt;t size='1'&gt;
-            Your mission is to stop the OPFOR convoy by any means necessary. You can destroy it, or hijack it to retrieve all the ammunition you can grab. The target will be spotted on your map.&lt;/t&gt;
+            &lt;br/&gt;
+            Your mission is to stop the OPFOR convoy by any means necessary. You can destroy it, or hijack it to retrieve all the ammunition&lt;br/&gt;
+            you can grab. The target will be spotted on your map.&lt;/t&gt;
             &lt;br/&gt;&lt;br/&gt;
             &lt;t size='1.15' color='#00a0ff'&gt;Cost: 10&lt;img image='\A3\Ui_f\data\GUI\Cfg\Ranks\general_gs.paa'/&gt;&lt;/t&gt;
             &lt;br/&gt;
-            &lt;t size='1.15' color='#ffa000'&gt;Reward: OPFOR alert level reduced by 15%&lt;/t&gt;
+            &lt;t size='1.15' color='#ffa000'&gt;Reward: OPFOR alert level reduced by 15% and 15 Civilian reputation&lt;/t&gt;
             &lt;br/&gt;
             &lt;t size='1.15' color='#ffa000'&gt;Side reward: All the ammunition you can retrieve.&lt;/t&gt;
             &lt;br/&gt;&lt;br/&gt;
@@ -3667,7 +3677,7 @@
         <Key ID="STR_SECONDARY_MISSION2">
             <Original>Search and Rescue</Original>
             <French>Recherche et Sauvetage</French>
-            <German>Helikopterbergung</German>
+            <German>Such und Rettung</German>
             <Spanish>Búsqueda y rescate</Spanish>
             <Russian>Найти и спасти</Russian>
             <Italian>Cerca e Soccorri</Italian>
@@ -3682,10 +3692,15 @@
             &lt;t size='1.3' color='#ffa000'&gt;SEARCH AND RESCUE&lt;/t&gt;
             &lt;br/&gt;&lt;br/&gt;
             &lt;t size='1'&gt;
-            We have lost contact with a recon helicopter on mission behind the enemy lines. We believe the chopper was shot down by hostile forces.&lt;/t&gt;
+            &lt;br/&gt;
+            We have lost contact with a recon plane on mission behind the enemy lines.&lt;br/&gt;
+            We believe the plane was shot down by hostile forces.&lt;br/&gt;
             &lt;br/&gt;&lt;br/&gt;
             &lt;t size='1'&gt;
-            The helicopter may have crashlanded anywhere in a large zone around its last known position. Your mission is to retrieve the chopper crew and their precious intel. Hostile forces may have found them first, so you must be quick, careful, and ready to engage.&lt;/t&gt;
+            &lt;br/&gt;
+            The plane may have crashlanded anywhere in a large zone around its last known position.&lt;br/&gt;
+            Your mission is to retrieve the plane crew and their precious intel.&lt;br/&gt;
+            Hostile forces may have found them first, so you must be quick, careful, and ready to engage.&lt;/t&gt;
             &lt;br/&gt;&lt;br/&gt;
             &lt;t size='1.15' color='#00a0ff'&gt;Cost: 8&lt;img image='\A3\Ui_f\data\GUI\Cfg\Ranks\general_gs.paa'/&gt;&lt;/t&gt;
             &lt;br/&gt;
@@ -3712,10 +3727,10 @@
             &lt;t size='1.3' color='#ffa000'&gt;SUCHEN UND ZERSTÖREN&lt;/t&gt;
             &lt;br/&gt;&lt;br/&gt;
             &lt;t size='1'&gt;
-            Wir haben den Kontakt mit einem Aufklärungshelikopter, der auf einer Mission hinter feindlichen Linien war, verloren. Wir vermuten, dass der Helikotper von feindlichen Kräften abgeschossen wurde.&lt;/t&gt;
+            Wir haben den Kontakt mit einem Aufklärungsflugzeug, das auf einer Mission hinter feindlichen Linien war, verloren. Wir vermuten, dass das Flugzeug von feindlichen Kräften abgeschossen wurde.&lt;/t&gt;
             &lt;br/&gt;&lt;br/&gt;
             &lt;t size='1'&gt;
-            Der Helikopter muss irgendwo in einem größeren Bereich um seine letzte bekannte Position notgelandet sein. Ihr Auftrag ist es, die Besatzung zu finden und deren Aufklärungsbericht zu beschaffen. Feindliche Kräfte könnten sie bereits gefunden haben, also müssen sie schnell, vorsichtig und auf alles vorbereitet sein.&lt;/t&gt;
+            Das Flugzeug muss irgendwo in einem größeren Bereich um seine letzte bekannte Position notgelandet sein. Ihr Auftrag ist es, die Besatzung zu finden und deren Aufklärungsbericht zu beschaffen. Feindliche Kräfte könnten sie bereits gefunden haben, also müssen sie schnell, vorsichtig und auf alles vorbereitet sein.&lt;/t&gt;
             &lt;br/&gt;&lt;br/&gt;
             &lt;t size='1.15' color='#00a0ff'&gt;Cost: 8&lt;img image='\A3\Ui_f\data\GUI\Cfg\Ranks\general_gs.paa'/&gt;&lt;/t&gt;
             &lt;br/&gt;
@@ -3860,9 +3875,9 @@
             <Korean>아군 분대당 AI병사 모집 한도</Korean>
         </Key>
         <Key ID="STR_NOTIFICATION_SAR_STARTED">
-            <Original>Crashed helicopter near %1.</Original>
+            <Original>Crashed plane near %1.</Original>
             <French>Helicopter crashé près de %1.</French>
-            <German>Helikopterabsturz in der Nähe von %1</German>
+            <German>Flugzeugabsturz in der Nähe von %1</German>
             <Spanish>Helicóptero derribado cerca de %1</Spanish>
             <Russian>Вертолет разбился около %1.</Russian>
             <Italian>L'elicottero si è schiantato nei pressi di %1.</Italian>
@@ -4656,14 +4671,14 @@
             <Korean>트럭 해제</Korean>
         </Key>
         <Key ID="STR_LOGISTIC_TT_BUYTRUCK">
-            <Original>Costs: 100 supplies and 100 fuel.</Original>
-            <German>Kosten: 100 Nachschub und 100 Kraftstoff.</German>
-            <Russian>Стоимость: 100 припасов и 100 единиц топлива.</Russian>
-            <Italian>Costo: 100 approvvigionamenti e 100 carburante.</Italian>
+            <Original>Costs: 50 supplies and 50 fuel.</Original>
+            <German>Kosten: 50 Nachschub und 50 Kraftstoff.</German>
+            <Russian>Стоимость: 50 припасов и 50 единиц топлива.</Russian>
+            <Italian>Costo: 50 approvvigionamenti e 50 carburante.</Italian>
             <Chinesesimp>花费：100补给和100燃料。</Chinesesimp>
             <Chinese>花費：100 補給和 100 油料。</Chinese>
-            <Turkish>Maliyeti : 100 ikmal ve 100 benzin</Turkish>
-            <Portuguese>Custa: 100 de suprimento e 100 de combustível.</Portuguese>
+            <Turkish>Maliyeti : 50 ikmal ve 50 benzin</Turkish>
+            <Portuguese>Custa: 50 de suprimento e 50 de combustível.</Portuguese>
             <Korean>비용: 100보급품(S), 100연료(F)</Korean>
         </Key>
         <Key ID="STR_LOGISTIC_TT_SELLTRUCK">
@@ -4828,12 +4843,15 @@
         </Key>
         <Key ID="STR_TUTO_TEXT1">
             <Original>&lt;br/&gt;&lt;br/&gt;
-            Hello gentlemen and welcome to the region, enemy forces have surprised us with a brutal and overwhelming offensive. They now have complete control of the region but with your efforts, that won't last long.&lt;br/&gt; &lt;br/&gt;
-            Our primary objective is simple: liberate the region from enemy control!&lt;br/&gt; &lt;br/&gt;
-            The road to victory will be long and dangerous. You will have to retake many sectors and acquire the necessary resources to improve the quantity and quality of friendly forces engaged in this campaign.&lt;br/&gt; &lt;br/&gt;
-            Moreover, enemy forces will most certainly react to our advance. You will have to engage in secondary operations to weaken a foe that fights with higher numbers and better equipment than you do.&lt;br/&gt; &lt;br/&gt;
-            In your efforts you will need the support of the local population, so always double-check what you're firing at!&lt;br/&gt; &lt;br/&gt;
-            Questions? HQ out.&lt;br/&gt; &lt;br/&gt;
+            Hello gentlemen and welcome to the region, enemy forces have surprised us with a brutal and overwhelming offensive.&lt;br/&gt; &lt;br/&gt;
+            They now have complete control of the region but with your efforts, that won't last long.&lt;br/&gt;
+            Our primary objective is simple: liberate the region from enemy control!&lt;br/&gt;
+            The road to victory will be long and dangerous. You will have to retake many sectors and acquire the necessary resources to&lt;br/&gt;
+            improve the quantity and quality of friendly forces engaged in this campaign.&lt;br/&gt;
+            Moreover, enemy forces will most certainly react to our advance. You will have to engage in secondary operations to weaken&lt;br/&gt;
+            a foe that fights with higher numbers and better equipment than you do.&lt;br/&gt;
+            In your efforts you will need the support of the local population, so always double-check what you're firing at!&lt;br/&gt;
+            Questions? HQ out.&lt;br/&gt;
             </Original>
             <German>&lt;br/&gt;&lt;br/&gt;
             Hallo die Herren und Willkommen im Kampfgebiet, der Feind hat uns mit einer brutalen und überwältigenden Offensive überrascht. Er hat jetzt die totale Kontrolle, aber Dank Ihres Einsatzes wird das nicht von Dauer sein.&lt;br/&gt; &lt;br/&gt;
@@ -4915,14 +4933,18 @@
         </Key>
         <Key ID="STR_TUTO_TEXT2">
             <Original>&lt;br/&gt;&lt;br/&gt;
-            You begin the campaign either onboard the USS Freedom, or at Chimera base, safe zones the enemy won't dare to attack. Your first choice is to choose where you want to deploy. At first you can only deploy at your starting position but as you progress, more options will become available such as Forward Operating Bases (FOB) and mobile respawns.&lt;br/&gt; &lt;br/&gt;
-            At your starting position you can choose your equipment from a complete Arsenal. You will also find your first FOB packaged inside a container, the Spartan-01 helicopter and a few other small transport helicopters.&lt;br/&gt; &lt;br/&gt;
-            You will have to ferry that container with the Spartan-01 (or choose to start with the first FOB already built). You can deploy this first FOB wherever you want (as long as you're 1km from the starting position and 300m from any sector), so it's up to you to choose the right place to start your campaign offensive.&lt;br/&gt; &lt;br/&gt;
+            You begin the campaign deep in a well-protected outpost, a safe zone the enemy won't dare to attack.&lt;br/&gt;
+            Your first choice is to choose where you want to deploy. At first you can only deploy at your starting position&lt;br/&gt;
+            but as you progress, more options will become available such as Forward Operating Bases (FOB) and mobile respawns.&lt;br/&gt; &lt;br/&gt;
+            At your starting position you can choose your equipment from a complete Arsenal. You will also find your first FOB packaged&lt;br/&gt;
+            inside a truck, the Karelia-01 mobile respawn vehicle and a few other small transport vehicles.&lt;br/&gt; &lt;br/&gt;
+            You can deploy the first FOB wherever you want (as long as you're 1km from the starting position and 300m from any sector),&lt;br/&gt;
+            so it's up to you to choose the right place to start your campaign offensive.&lt;br/&gt; &lt;br/&gt;
             </Original>
             <German>&lt;br/&gt;&lt;br/&gt;
-            Sie beginnen die Kampagne entweder an Bord der USS Freedom oder in der Chimera Basis, wobei es sich jeweils um eine sichere Zone handelt, die der Feind nicht wagen würde anzugreifen. Ihre erste Entscheidung ist es, zu wählen, wo sie eingesetzt werden wollen. Zuerst können sie nur an Ihrer Startposition einsetzen, aber je weiter Sie voran schreiten, umso mehr Möglichkeiten, wie Forward Operating Bases (FOB) und mobile Respawns, werden Ihnen offen stehen.&lt;br/&gt; &lt;br/&gt;
-            An Ihrer Startposition können Sie Ihre Ausrüstung aus einem kompletten Arsenal wählen. Außerdem finden Sie hier auch Ihre erste FOB verpackt in einem Container, den Spartan-01 Helikopter und ein paar kleine Transport-Helikopter&lt;br/&gt; &lt;br/&gt;
-            Sie werden diesen Container mit dem Spartan-01 verlegen müssen (oder Sie entscheiden sich, mit einer ersten, bereits gebauten FOB zu starten). Sie können diese erste FOB aufstellen, wo Sie wollen (solange sie 1km von der Startposition und 300m von einem Sektor entfernt ist), also liegt es an Ihnen, den richtigen Platz für den Start Ihrer Offensive zu finden.&lt;br/&gt; &lt;br/&gt;
+            Sie beginnen die Kampagne in einem gut Verteidigten Außenposten, eine sichere Zone, die der Feind nicht wagen würde anzugreifen. Ihre erste Entscheidung ist es, zu wählen, wo sie eingesetzt werden wollen. Zuerst können sie nur an Ihrer Startposition einsetzen, aber je weiter Sie voran schreiten, umso mehr Möglichkeiten, wie Forward Operating Bases (FOB) und mobile Respawns, werden Ihnen offen stehen.&lt;br/&gt; &lt;br/&gt;
+            An Ihrer Startposition können Sie Ihre Ausrüstung aus einem kompletten Arsenal wählen. Außerdem finden Sie hier auch Ihre erste FOB verpackt in einem Truck, den Karelia-01 mobiles Respawn Fahrzeug und ein paar kleine Transport-Fahrzeuge.&lt;br/&gt; &lt;br/&gt;
+            Sie können die erste FOB aufstellen, wo Sie wollen (solange sie 1km von der Startposition und 300m von einem Sektor entfernt ist), also liegt es an Ihnen, den richtigen Platz für den Start Ihrer Offensive zu finden.&lt;br/&gt; &lt;br/&gt;
             </German>
             <Italian>&lt;br/&gt;&lt;br/&gt;
             La campagna partirà dalla USS Freedom, o dalla base Chimera, sono zone sicure che il nemico non oserà attaccare. Prima di tutto bisogna scegliere dove schierarsi. All'inizio ci si può solo schierare nelle posizioni citate prima, ma mentre si progredisce, saranno disponibili ulteriori opzioni quali FOB e respawn mobili.&lt;br/&gt; &lt;br/&gt;
@@ -4979,7 +5001,7 @@
             To succeed, you will have to capture large number of different sectors, each with their own use.&lt;br/&gt; &lt;br/&gt;
             </Original>
             <German>&lt;br/&gt;&lt;br/&gt;
-            Das Primärziel dieser Kampagne ist es, die Feindkräfte in dieser Region vollständig zu entfernen. Um dies zu erreichen, werden Sie ALLE Großstädte innerhalb dieser Region befreien müssen! Dies ist die einzige Bedingung zum Sieg, aber diese Städte sind schwer zu knacken, in Anbetracht unserer wenigen Ressourcen und einer gut aufgestellten Feindmacht.&lt;br/&gt; &lt;br/&gt;
+            Sie beginnen die Kampagne in einem gut Verteidigten Außenposten, eine Sicherheitszone die der Feind nicht wagen würde Anzugreifen. Um dies zu erreichen, werden Sie ALLE Großstädte innerhalb dieser Region befreien müssen! Dies ist die einzige Bedingung zum Sieg, aber diese Städte sind schwer zu knacken, in Anbetracht unserer wenigen Ressourcen und einer gut aufgestellten Feindmacht.&lt;br/&gt; &lt;br/&gt;
             Um das zu erreichen, werden Sie eine große Anzahl von verschiedensten Sektoren einnehmen, jeder mit seinen spezifischen Eigenschaften.&lt;br/&gt; &lt;br/&gt;
             </German>
             <Italian>&lt;br/&gt;&lt;br/&gt;

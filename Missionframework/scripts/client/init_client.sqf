@@ -11,6 +11,8 @@ switch (KP_liberation_arsenal) do {
     case  9: {[] call compileFinal preprocessFileLineNumbers "arsenal_presets\csat.sqf";};
     case 10: {[] call compileFinal preprocessFileLineNumbers "arsenal_presets\unsung.sqf";};
     case 11: {[] call compileFinal preprocessFileLineNumbers "arsenal_presets\sfp.sqf";};
+	case 12: {[] call compileFinal preprocessFileLineNumbers "arsenal_presets\finns_ww2.sqf";};
+    case 13: {[] call compileFinal preprocessFileLineNumbers "arsenal_presets\finns_ww2_ace.sqf";};
     default  {GRLIB_arsenal_weapons = [];GRLIB_arsenal_magazines = [];GRLIB_arsenal_items = [];GRLIB_arsenal_backpacks = [];};
 };
 

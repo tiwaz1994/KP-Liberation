@@ -11,7 +11,11 @@ GRLIB_whitelisted_tags = [
 // For example: "76561198016642627"
 // To know that information: https://steamid.io/
 GRLIB_whitelisted_steamids = [
-
+	"76561197987378892",
+	"76561197979634441",
+	"76561197984585540",
+	"76561197983771853",
+	"76561198219058931"
 ];
 
 // Allowed individual player names. Note that this method is not very secure contrary to SteamIDs.

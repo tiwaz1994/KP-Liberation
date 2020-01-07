@@ -28,13 +28,13 @@ class Params
         title = $STR_PARAMS_DIFFICULTY;
         values[] = { 0, 1, 2, 3, 4, 5, 6, 7 };
         texts[] = { $STR_PARAMS_DIFFICULTY1, $STR_PARAMS_DIFFICULTY2, $STR_PARAMS_DIFFICULTY3, $STR_PARAMS_DIFFICULTY4, $STR_PARAMS_DIFFICULTY5, $STR_PARAMS_DIFFICULTY6, $STR_PARAMS_DIFFICULTY7, $STR_PARAMS_DIFFICULTY8 };
-        default = 2;
+        default = 3;
     };
     class Aggressivity {
         title = $STR_AGGRESSIVITY_PARAM;
         values[] = {0,1,2,3,4};
         texts[] = {$STR_AGGRESSIVITY_PARAM0, $STR_AGGRESSIVITY_PARAM1,$STR_AGGRESSIVITY_PARAM2,$STR_AGGRESSIVITY_PARAM3,$STR_AGGRESSIVITY_PARAM4};
-        default = 2;
+        default = 3;
     };
     class AdaptToPlayercount {
         title = $STR_PARAM_ADAPT_TO_PLAYERCOUNT;
@@ -58,7 +58,7 @@ class Params
         title = $STR_PARAMS_FIRSTFOBVEHICLE;
         values[] = {0, 1};
         texts[] = {$STR_PARAMS_FIRSTFOBVEHICLE_CONTAINTER, $STR_PARAMS_FIRSTFOBVEHICLE_TRUCK};
-        default = 0;
+        default = 1;
     };
     class MaximumFobs {
         title = $STR_PARAM_FOBS_COUNT;
@@ -148,25 +148,25 @@ class Params
         title = $STR_A3_ReviveDuration;
         values[] = {6,8,10,12,15,20,25,30};
         texts[] = {6,8,10,12,15,20,25,30};
-        default = 6;
+        default = 30;
     };
     class ReviveRequiredTrait {
         title = $STR_A3_RequiredTrait;
         values[] = {0,1};
         texts[] = {$STR_A3_None,$STR_A3_Medic};
-        default = 1;
+        default = 0;
     };
     class ReviveMedicSpeedMultiplier {
         title = $STR_A3_RequiredTrait_MedicSpeedMultiplier;
         values[] = {1,1.5,2,2.5,3};
         texts[] = {"1x","1.5x","2x","2.5x","3x"};
-        default = 1;
+        default = 2;
     };
     class ReviveRequiredItems {
         title = $STR_A3_RequiredItems;
         values[] = {0,1,2};
         texts[] = {$STR_A3_None,$STR_A3_Medikit,$STR_A3_FirstAidKitOrMedikit};
-        default = 1;
+        default = 2;
     };
     class UnconsciousStateMode {
         title = $STR_A3_IncapacitationMode;
@@ -226,7 +226,7 @@ class Params
         title = $STR_PARAM_RESPAWN_COOLDOWN;
         values[] = {0, 300, 600, 900, 1200, 1800, 3600};
         texts[] = {$STR_PARAMS_DISABLED, 5, 10, 15, 20, 30, 60};
-        default = 900;
+        default = 600;
     };
     class MobileArsenal {
         title = $STR_PARAMS_MOBILEARSENAL;
@@ -262,13 +262,13 @@ class Params
         title = $STR_PARAM_CLEAR_CARGO;
         values[] = {1,0};
         texts[] = { $STR_PARAMS_ENABLED, $STR_PARAMS_DISABLED };
-        default = 1;
+        default = 0;
     };
     class AllowEnemiesInImmobile {
         title = $STR_PARAM_ALLOW_ENEMIES_IN_IMMOBILE;
         values[] = {0, 25, 50, 75, 100};
         text[] = { $STR_PARAMS_DISABLED, "25%", "50%", "75%", "100%"};
-        default = 50;
+        default = 100;
     };
     class DelayDespawnMax {
         title = $STR_PARAM_DELAY_DESPAWN_MAX;
@@ -298,7 +298,7 @@ class Params
         title = $STR_PERMISSIONS_PARAM;
         values[] = {1,0};
         texts[] = { $STR_PARAMS_ENABLED, $STR_PARAMS_DISABLED };
-        default = 1;
+        default = 0;
     };
     class CleanupVehicles {
         title = $STR_CLEANUP_PARAM;

@@ -10,10 +10,10 @@ unsafeCVL = 1;
 briefingName = $STR_MISSION_TITLE;
 overviewText = "www.killahpotatoes.de";
 overviewPicture = "res\lib.paa";
-author = "[GREUH] Zbug, [GREUH] McKeewa, [KP] Wyqer, port: Stahl, Tiwaz";
+author = "[GREUH] Zbug, [GREUH] McKeewa, [KP] Wyqer, WW2 port: Stahl, Tiwaz";
 onLoadName = $STR_MISSION_TITLE;
 onLoadMission = "www.killahpotatoes.de";
-loadScreen = "res\lib.paa";
+loadScreen = "res\loadscreenWW2.paa";
 
 joinUnassigned = 1;
 
@@ -41,4 +41,14 @@ class CfgDebriefing
 		description = $STR_COMMANDER_NOT_AUTHORIZED;
 		pictureBackground = "";
 	};
+};
+class cfgMusic
+{ 
+     tracks[] = {introFinns};
+
+     class introFinns
+     {
+          name="introFinns";
+          sound[] = {"\res\introFinns.ogg", db+10, 1.0};
+     };
 };

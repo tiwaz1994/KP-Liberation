@@ -22,7 +22,7 @@ FOB_box_typename = "CUP_hromada_beden_dekorativniX";                    // This 
 FOB_truck_typename = "Lib_ger_SdKfz7_Tarn53";                           // This is the FOB as a vehicle.
 Arsenal_typename = "AmmoCrates_NoInteractive_Large";                    // This is the virtual arsenal as portable supply crates.
 Respawn_truck_typename = "LIB_opelblitz_tentB_Tarn";                    // This is the mobile respawn (and medical) truck.
-huron_typename = "LIB_GazM1_SOV_camo_sand";                             // This is Spartan 01, a multipurpose mobile respawn as a helicopter.
+huron_typename = "LIB_opelblitz_tentB_Tarn";                            // This is Spartan 01, a multipurpose mobile respawn as a helicopter.
 crewman_classname = "I_NORTH_FIN_AD_T_S_Crewman_1CL";                   // This defines the crew for vehicles.
 pilot_classname = "LIB_FIN_NCOFAF_g1vbfafpKersGP35";                    // This defines the pilot for helicopters.
 KP_liberation_little_bird_classname = "LIB_GazM1_SOV";                  // These are the little birds which spawn on the Freedom or at Chimera base.
@@ -30,10 +30,10 @@ KP_liberation_boat_classname = "LIB_LCA";                               // These
 KP_liberation_truck_classname = "LIB_opelblitz_open_Tarn";              // These are the trucks which are used in the logistic convoy system.
 KP_liberation_small_storage_building = "ContainmentArea_02_sand_F";     // A small storage area for resources.
 KP_liberation_large_storage_building = "ContainmentArea_01_sand_F";     // A large storage area for resources.
-KP_liberation_recycle_building = "INS_WarfareBVehicleServicePoint";     // The building defined to unlock FOB recycling functionality.
+KP_liberation_recycle_building = "Land_I44_Tin_Shed";                   // The building defined to unlock FOB recycling functionality.
 KP_liberation_air_vehicle_building = "Land_Airport_01_controlTower_F";  // The building defined to unlock FOB air vehicle functionality.
-KP_liberation_heli_slot_building = "Land_HelipadSquare_F";              // The helipad used to increase the GLOBAL rotary-wing cap.
-KP_liberation_plane_slot_building = "Land_Ss_hangar";                   // The hangar used to increase the GLOBAL fixed-wing cap.
+KP_liberation_heli_slot_building = "Wooden_barrels";                    // The helipad used to increase the GLOBAL rotary-wing cap.
+KP_liberation_plane_slot_building = "Land_TentHangar_V1_F";             // The hangar used to increase the GLOBAL fixed-wing cap.
 KP_liberation_supply_crate = "CargoNet_01_box_F";                       // This defines the supply crates, as in resources.
 KP_liberation_ammo_crate = "B_CargoNet_01_ammo_F";                      // This defines the ammunition crates.
 KP_liberation_fuel_crate = "CargoNet_01_barrels_F";                     // This defines the fuel crates.
@@ -85,16 +85,21 @@ infantry_units = [
 ];
 
 light_vehicles = [
-    ["LIB_GazM1_SOV_camo_sand",50,0,25],                                // Quad Bike
-	["LIB_GazM1_SOV",50,0,25],                               			// Quad Bike
-	["LIB_opelblitz_open_Tarn",60,0,30],                               	// Quad Bike
-    ["LIB_SdKfz251",100,40,50],                                         // Hunter (HMG)
-    ["LIB_SdKfz251_FFV",100,60,50],                                     // Hunter (GMG)
-    ["LIB_SOV_M3_Halftrack",100,60,50],                                 // M1025A2 (Mk19)
-	["LIB_US6_BM13",75,35,50],
-    ["B_Boat_Transport_01_F",100,0,25],                                 // Assault Boat
+    ["LIB_GazM1_SOV_camo_sand",0,0,0],                                // Quad Bike
+	["LIB_GazM1_SOV",0,0,0],                               			// Quad Bike
+	["LIB_opelblitz_open_Tarn",40,0,30],                               	// Quad Bike
+    ["LIB_SdKfz251",80,40,50],                                         // Hunter (HMG)
+    ["LIB_SdKfz251_FFV",80,45,50],                                     // Hunter (GMG)
+    ["LIB_SOV_M3_Halftrack",75,55,55],                                 // M1025A2 (Mk19)
+	["LIB_US6_BM13",225,150,50],
+    ["B_Boat_Transport_01_F",10,0,10],                                 // Assault Boat
     ["LIB_LCA",100,40,35],                            					// Speedboat Minigun
-	["LIB_US6_BM13",225,100,40]
+	["LIB_Scout_M3FF",65,55,55],
+	["LIB_Willys_MB",20,0,25],     
+	["LIB_Willys_MB_Hood",20,0,25], 
+	["LIB_Willys_MB_Ambulance",25,0,25], 
+	["LIB_Zis5v",30,0,30],
+	["LIB_Zis5v_61K_DLV",30,25,30]
 ];
 
 heavy_vehicles = [
@@ -103,31 +108,34 @@ heavy_vehicles = [
 	["LIB_FIN_T3476_Kaki",375,275,200],                                 // M2A1 Slammer
     ["LIB_FIN_PzKpfwIV_J_Camo",400,300,200],                            // FV4034 Challenger 2
 	["LIB_FIN_PzKpfwIV_J_Kaki",400,300,200],                            // FV4034 Challenger 2
-	["LIB_SU85",350,250,200],
-	["LIB_JS2_43_DLV",500,400,300]
+	["LIB_GER_SU85_Kaki",350,250,200],
+	["LIB_JS2_43",425,350,225]
 ];
 
 air_vehicles = [
     ["sab_gladiator_fin",200,150,125],                                  // CH-53E Super Stallion
     ["sab_i16_fin",300,200,175],                               			// CH-67 Huron (Armed)
-    ["sab_ms406_fin",400,325,225],                                      // MQ-4A Greyhawk
     ["sab_la5_fin",450,350,250],                                        // MQ-12 Falcon
-    ["sab_bf109_fin",500,400,350],                                      // A-143 Buzzard
-    ["LIB_FIN_Pe2_Camo",1000,800,400]                                   // A-164 Wipeout (CAS)
+    ["sab_bf109_fin",500,400,250],                                      // A-143 Buzzard
+	["sab_il2_fin",700,500,400],
+    ["LIB_FIN_Pe2_Camo",600,400,300],                                   // A-164 Wipeout (CAS)
+	["LIB_Ju52",600,0,500]
 ];
 
 static_vehicles = [
-    ["NORTH_Maxim",15,20,0],                                            // Mk30A HMG .50
-	["LIB_SU_SearchLight",5,0,0],                                       // Mk30A HMG .50
+    ["NORTH_Maxim",5,2,0],                                           // Mk30A HMG .50
+	["LIB_SU_SearchLight",2,0,0],                                       // Mk30A HMG .50
     ["NORTH_Lahti_L39",25,30,0],                                        // Mk32A GMG 20mm
-    ["NORTH_76k02",40,80,0],                                            // Static Titan Launcher (AT)
+    ["NORTH_76k02",40,80,0],                                      // Static Titan Launcher (AT)
     ["LIB_Pak40",70,120,0],                                             // Static Titan Launcher (AA)
 	["LIB_Zis3",55,100,0],
 	["LIB_BM37",70,140,0],
     ["LIB_GrWr34_g",80,150,0],                                          // Mk6 Mortar
-    ["RHS_M119_WD",100,200,0],                                          // M119A2
-    ["LIB_61k",100,50,0],                                               // MIM-145 Defender
-	["LIB_Nebelwerfer41_Camo",200,100,0]                                // MIM-145 Defender
+    ["LIB_61k",30,25,0],                                               // MIM-145 Defender
+	["LIB_Nebelwerfer41_Camo",200,100,0],                                // MIM-145 Defender
+	["LIB_Maxim_M30_base",5,2,0], 
+	["LIB_leFH18",110,100,0],
+	["NORTH_76k02_tricolor",40,80,0]
 ];
 
 buildings = [
@@ -135,47 +143,31 @@ buildings = [
     ["geist_Flag_FINEtat_F",0,0,0],
     ["geist_Flag_FINGuerre_F",0,0,0],
     ["Flag_White_F",0,0,0],
-    ["INS_WarfareBFieldhHospital",0,0,0],
-    ["USMC_WarfareBFieldhHospital",0,0,0],
     ["geist_Flag_CR_F",0,0,0],
+    ["Land_LampShabby_F",5,0,0],
     ["CamoNet_BLUFOR_F",0,0,0],
     ["CamoNet_BLUFOR_open_F",0,0,0],
     ["CamoNet_BLUFOR_big_F",0,0,0],
     ["Land_WW2_Setka_Dor",0,0,0],
     ["Land_WW2_CamoNet_NATO_Var1",0,0,0],
-    ["Land_WW2_CamoNet_NATO_Var1",0,0,0],		
     ["Land_WW2_Setka_Vert",0,0,0],
 	["Land_Setka_Car",0,0,0],
 	["Land_WW2_CamoNet_Tank",0,0,0],
-    ["Land_PortableLight_double_F",0,0,0],
-    ["Land_LampSolar_F",0,0,0],
-    ["Land_LampHalogen_F",0,0,0],
-    ["Land_LampStreet_small_F",0,0,0],
-    ["Land_LampAirport_F",0,0,0],
+    ["Land_Campfire_burning",0,0,0],
     ["WoodChair",0,0,0],
 	["Land_Table_EP1",0,0,0],
     ["Land_MapBoard_Enoch_F",0,0,0],
-    ["Land_Pallet_MilBoxes_F",0,0,0],
-    ["Land_PaperBox_open_empty_F",0,0,0],
-    ["Land_PaperBox_open_full_F",0,0,0],
-    ["Land_PaperBox_closed_F",0,0,0],
     ["Land_DieselGroundPowerUnit_01_F",0,0,0],
     ["Land_ToolTrolley_02_F",0,0,0],
     ["Land_WeldingTrolley_01_F",0,0,0],
-    ["Land_Workbench_01_F",0,0,0],
     ["Land_GasTank_01_blue_F",0,0,0],
-    ["Land_GasTank_01_khaki_F",0,0,0],
-    ["Land_GasTank_01_yellow_F",0,0,0],
+    ["Hhedgehog_concrete",1,0,0],
+    ["Hhedgehog_concreteBig",2,0,0],
     ["Land_GasTank_02_F",0,0,0],
-    ["Land_BarrelWater_F",0,0,0],
-    ["Land_BarrelWater_grey_F",0,0,0],
-    ["Land_WaterBarrel_F",0,0,0],
-    ["Land_WaterTank_F",0,0,0],
-    ["Land_BagFence_Round_F",0,0,0],
-    ["Land_BagFence_Short_F",0,0,0],
-    ["Land_BagFence_Long_F",0,0,0],
-    ["Land_BagFence_Corner_F",0,0,0],
-    ["Land_BagFence_End_F",0,0,0],
+    ["Barrel4",0,0,0],
+    ["Land_fort_bagfence_round",0,0,0],
+    ["Land_fort_bagfence_long",0,0,0],
+    ["Land_fort_bagfence_corner",0,0,0],
 	["Land_SandbagBarricade_01_half_F",1,0,0],
 	["Land_SandbagBarricade_01_F",2,0,0],
 	["Land_SandbagBarricade_01_hole_F",2,0,0],
@@ -185,7 +177,7 @@ buildings = [
 	["Land_WoodenCrate_01_stack_x5_F",0,0,0],
     ["Land_Fort_Bagfence_Bunker",3,0,0],
     ["Fort_RazorWire",1,0,0],
-    ["Land_I44_HedgeHog",2,0,0],
+    ["Land_CzechHedgehog_01_F",1,0,0],
     ["Land_fort_rampart",0,0,0],
     ["Land_fort_artillery_nest",0,0,0],
     ["Fort_NestF",5,0,0],
@@ -196,10 +188,16 @@ buildings = [
     ["Land_WW2_TrenchTank",0,0,0],
     ["Land_WW2_TrenchMG",0,0,0],
     ["Land_WW2_Big_Infantry_Trench",0,0,0],
+    ["Land_WW2_Fortification_Trench_Long_X3",0,0,0],
+    ["Land_WW2_Fortification_Trench_Corner_90",0,0,0],
+    ["Land_WW2_Fortification_Trench_Bridge",0,0,0],
+    ["Land_WW2_Fortification_Trench_Wide",0,0,0],
+    ["Land_WW2_Fortification_Trench_Bunker_FFP",0,0,0],
     ["Land_WW2_Fortification_Pillbox_Small",15,0,0],
-    ["Land_Sign_WarningMilitaryArea_F",0,0,0],
-    ["Land_Sign_WarningMilAreaSmall_F",0,0,0],
-    ["Land_Sign_WarningMilitaryVehicles_F",0,0,0],
+    ["Land_WW2_BET_Wachhaus",0,0,0],
+	["Land_WW2_BET_Schranke",0,0,0],
+    ["Land_WW2_BET_Achtung_Minen",0,0,0],
+    ["Land_I44_Buildings_Sign_Minen",0,0,0],
     ["Land_Razorwire_F",0,0,0],
     ["Land_ClutterCutter_large_F",0,0,0]
 ];
@@ -207,24 +205,32 @@ buildings = [
 support_vehicles = [
     [Arsenal_typename,100,200,0],
     [Respawn_truck_typename,200,0,100],
-    [FOB_box_typename,300,500,0],
-    [FOB_truck_typename,300,500,75],
+    [FOB_box_typename,400,500,0],
+    [FOB_truck_typename,300,300,300],
     [KP_liberation_small_storage_building,0,0,0],
     [KP_liberation_large_storage_building,0,0,0],
-    [KP_liberation_recycle_building,250,0,0],
-    [KP_liberation_air_vehicle_building,1000,0,0],
-    [KP_liberation_heli_slot_building,250,0,0],
+    [KP_liberation_recycle_building,100,0,0],
+    [KP_liberation_air_vehicle_building,700,0,0],
+    [KP_liberation_heli_slot_building,0,0,0],
     [KP_liberation_plane_slot_building,500,0,0],
-	["LIB_Box_81mm_Mo_Smoke",50,10,0],
-	["LIB_Box_81mm_Mo_HE",50,40,0],
+	["LIB_AmmoCrate_Mortar_GER",0,10,0],
+	["LIB_AmmoCrate_Mortar_SU",0,10,0],
+	["LIB_AmmoCrate_Arty_SU",0,15,0],
+	["LIB_AmmoCrate_Arty_GER",0,15,0],
 	["Box_NORTH_molotov",10,20,0],
-    ["ACE_medicalSupplyCrate_advanced",50,0,0],
-    ["ACE_Wheel",10,0,0],
-    ["ACE_Track",10,0,0],
-    ["LIB_Zis6_Parm",325,0,75],                                         // M977A4 Repair
-    ["LIB_Zis5v_Fuel",125,0,275],                                       // M978A4 Fuel
-    ["LIB_SdKfz_7_Ammo",125,200,75],                                    // M977A4 Ammo
-	["LIB_Zis5v_Med",125,00,75]                                        // M977A4 Medi
+    ["NORTH_CLE",10,0,0],
+    ["NORTH_Supplytorpedo",10,0,0],   
+    ["ACE_Wheel",5,0,0],
+    ["ACE_Track",5,0,0],
+    ["ACE_ConcertinaWireCoil",0,0,0],
+    ["LIB_Zis6_Parm",325,0,75],
+    ["LIB_Zis5v_Fuel",125,0,275],
+    ["LIB_SdKfz_7_Ammo",125,200,75],
+	["LIB_Zis5v_Med",125,00,75],
+    ["INS_WarfareBFieldhHospital",0,0,0],           //heal
+    ["Land_Workbench_01_F",100,0,0],                //repair
+    ["Land_Ind_TankSmall2",0,0,100],                //refuel
+    ["LIB_AmmoCrates_NoInteractive_Large",0,100,0]  //rearm
 ];
 
 /*
@@ -317,9 +323,21 @@ elite_vehicles = [
 	"LIB_FIN_T3476_Camo",
 	"LIB_US6_BM13",
 	"LIB_SOV_M3_Halftrack",
-	"LIB_SU85",
+	"LIB_GER_SU85_Kaki",
 	"LIB_Zis3",
 	"LIB_BM37",
-	"LIB_JS2_43_DLV",
-	"LIB_SU85"
+	"LIB_JS2_43",
+	"sab_i16_fin",
+	"sab_la5_fin",
+	"LIB_Scout_M3",
+	"LIB_Willys_MB",
+	"LIB_Willys_MB_Hood",
+	"LIB_Willys_MB_Ambulance",
+	"LIB_FIN_Pe2_Camo",
+	"LIB_Zis5v_Fuel",
+	"LIB_Zis6_Parm",
+	"LIB_61k",
+	"sab_il2_fin",
+	"LIB_Zis5v_61K_DLV",
+	"LIB_leFH18"
 ];

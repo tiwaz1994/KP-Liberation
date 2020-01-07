@@ -38,7 +38,20 @@ KP_liberation_medical_vehicles = [
     "uns_ch47a_medevac",
     "uns_H13_medevac_CAV",
     "uns_M577_amb",
-    "uns_uh1D_med"
+    "uns_uh1D_med",
+	//WW2 edit
+	"LIB_Zis5v_Med",
+	"LIB_OpelBlitz_Ambulance",
+	"Lib_ger_SdKfz251IFL_medical",
+	"LIB_ger_opelblitz_medical",
+	"LIB_ger_opelblitz_ambulance",
+	"LIB_GER_KubelKhakiHood_Medical",
+	"LIB_GER_KubelGreyHood_Medical",
+	"LIB_GER_KubelBeigeHood_Medical",
+	"LIB_GER_Kubel_Medical",
+	"LIB_GER_M3_Halftrack_medical",
+	"LIB_DAK_OpelBlitz_Ambulance",
+	"LIB_OpelBlitz_Ambulance_w"
 ];
 
 // Building classnames which also function as ACE medical facilities.
@@ -50,7 +63,9 @@ KP_liberation_medical_facilities = [
     "uns_mash_main",
     "uns_mash",
     "US_Tent_2",
-    "US_Tent_MASH"
+    "US_Tent_MASH",
+	//WW2Edit
+	"GUE_WarfareBFieldhHospital"
 ];
 
 // Classnames of ACE3 crates (which have to be in the unit preset as well).
@@ -92,8 +107,10 @@ If you want to change a preset, it's recommended to set all four presets to 0 an
 24 = CUP Army of the Czech Republic (Woodland)
 25 = SFP (Woodland)
 26 = SFP (Desert)
-27 = LDF (Contact DLC) */
-KP_liberation_preset_blufor = 0;
+27 = LDF (Contact DLC)
+28 = Finnish (Northern Fronts,SAB,GEIST,IFA3) 
+*/
+KP_liberation_preset_blufor = 28;
 
 /* OPFOR preset:
 0  = Custom (default vanilla CSAT)
@@ -113,8 +130,10 @@ KP_liberation_preset_blufor = 0;
 14 = CUP Takistani Army
 15 = CUP Chernarussian Movement of the Red Star
 16 = CUP Armed Forces of the Russian Federation (MSV - EMR)
-17 = CUP Armed Forces of the Russian Federation (Modern MSV) */
-KP_liberation_preset_opfor = 0;
+17 = CUP Armed Forces of the Russian Federation (Modern MSV) 
+18 = Soviets (GEIST,SAB,IFA3)
+*/
+KP_liberation_preset_opfor = 18;
 
 /* Resistance preset:
 0  = Custom (default vanilla FIA)
@@ -125,8 +144,10 @@ KP_liberation_preset_opfor = 0;
 5  = Germany (Global Mobilization)
 6  = Unsung
 7  = CUP Takistani Locals
-8  = CUP National Party of Chernarus */
-KP_liberation_preset_resistance = 0;
+8  = CUP National Party of Chernarus 
+9  = soviet (IFA3,GEIST)
+*/
+KP_liberation_preset_resistance = 9;
 
 /* Civilians preset:
 0  = Custom (default vanilla)
@@ -136,8 +157,9 @@ KP_liberation_preset_resistance = 0;
 4  = Germany (Global Mobilization)
 5  = Unsung
 6  = CUP Takistani Civilians
-7  = CUP Chernarussian Civilians */
-KP_liberation_preset_civilians = 0;
+7  = CUP Chernarussian Civilians 
+8  = WW2 Soviet Civilians (IFA3,GEIST)*/
+KP_liberation_preset_civilians = 8;
 
 /* Which arsenal preset should be used?
 0  = Use the default blacklist method (defined below)
@@ -151,8 +173,10 @@ KP_liberation_preset_civilians = 0;
 8  = GM East arsenal preset
 9  = CSAT arsenal preset
 10 = Unsung US arsenal preset
-11 = SFP arsenal preset */
-KP_liberation_arsenal = 0;
+11 = SFP arsenal preset 
+12 = Finns WW2 (Northern Fronts,GEIST,IFA3)
+13 = Finns WW2 ACE (Northern Fronts,GEIST;IFA3)*/
+KP_liberation_arsenal = 13;
 
 /* - Fuel consumption settings.
 Time in minutes till a full tank depletes whilst the vehicle is standing still with a running engine. */
@@ -166,21 +190,21 @@ KP_liberation_fuel_max = 45;
 Name of the savegame namespace inside of the [ServerProfileName].vars.Arma3Profile file. */
 GRLIB_save_key = "KP_LIBERATION_" + (toUpper worldName) + "_SAVEGAME";
 
-GRLIB_side_friendly = WEST;                                             // Friendly side.
+GRLIB_side_friendly = RESISTANCE;                                             // Friendly side.
 GRLIB_side_enemy = EAST;                                                // Enemy side.
-GRLIB_side_resistance = RESISTANCE;                                     // Resistance side.
+GRLIB_side_resistance = WEST;                                     // Resistance side.
 GRLIB_side_civilian = CIVILIAN;                                         // Civilian side.
 GRLIB_respawn_marker = "respawn";                                       // Respawn marker name.
 
-GRLIB_color_friendly = "ColorBLUFOR";                                   // Friendly sector marker color.
+GRLIB_color_friendly = "colorBLUFOR";                              // Friendly sector marker color.
 GRLIB_color_enemy = "ColorOPFOR";                                       // Enemy sector marker color.
 GRLIB_color_enemy_bright = "ColorRED";                                  // Enemy sector marker color (activated).
 
 GRLIB_fob_range = 125;                                                  // Build range around the main FOB building.
 GRLIB_halo_altitude = 2500;                                             // Altitude in metres for the HALO jump.
-GRLIB_secondary_missions_costs = [15, 10, 8];                           // Intel price for the secondary missions [FOB hunting, Convoy ambush, SAR].
-GRLIB_secondary_objective_impact = 0.6;                                 // The percentage impact against enemy combat readiness for a successful FOB hunt.
-GRLIB_recycling_percentage = 0.5;                                       // Percentage of resources you get back from recycling.
+GRLIB_secondary_missions_costs = [15, 15, 8];                           // Intel price for the secondary missions [FOB hunting, Convoy ambush, SAR].
+GRLIB_secondary_objective_impact = 0.5;                                 // The percentage impact against enemy combat readiness for a successful FOB hunt.
+GRLIB_recycling_percentage = 0.7;                                       // Percentage of resources you get back from recycling.
 KP_liberation_production_interval = 30;                                 // Time in minutes until a production process is finished, when resources multiplier is set to 1.
 
 GRLIB_sector_size = 1000;                                               // Range to activate a sector.
@@ -199,13 +223,13 @@ GRLIB_sector_cap = 180;                                                 // Cap f
 GRLIB_battlegroup_cap = 150;                                            // Cap for enemy battlegroups.
 GRLIB_patrol_cap = 150;                                                 // Cap for enemy patrols.
 
-KP_liberation_cr_kill_penalty = 5;                                      // Civil Reputation penalty for killing a civilian.
-KP_liberation_cr_building_penalty = 3;                                  // Civil Reputation penalty for destroying/damaging a building.
+KP_liberation_cr_kill_penalty = 4;                                      // Civil Reputation penalty for killing a civilian.
+KP_liberation_cr_building_penalty = 1;                                  // Civil Reputation penalty for destroying/damaging a building.
 KP_liberation_cr_vehicle_penalty = 2;                                   // Civil Reputation penalty for stealing a civilian vehicle.
 KP_liberation_cr_resistance_penalty = 3;                                // Civil Reputation penalty for killing a friendly resistance soldier.
-KP_liberation_cr_sector_gain = 5;                                       // Civil Reputation gain for liberate a sector.
+KP_liberation_cr_sector_gain = 10;                                      // Civil Reputation gain for liberate a sector.
 KP_liberation_cr_wounded_chance = 35;                                   // Chance (0-100) that there are wounded civilians right after capturing a sector.
-KP_liberation_cr_wounded_gain = 2;                                      // Civil Reputation gain for providing medical assistance for wounded civilians.
+KP_liberation_cr_wounded_gain = 5;                                      // Civil Reputation gain for providing medical assistance for wounded civilians.
 
 KP_liberation_civinfo_min = 5400;                                       // Civil Informant minimum spawn time. (seconds)
 KP_liberation_civinfo_max = 10800;                                      // Civil Informant maximum spawn time. (seconds)
@@ -217,6 +241,7 @@ KP_liberation_civinfo_task_duration = 900;                              // Durat
 
 KP_liberation_convoy_ambush_chance = 2;                                 // Chance that a logistic convoy will be ambushed, when civil reputation is low.
 KP_liberation_convoy_ambush_duration = 1200;                            // Duration of the convoy ambush event. (seconds)
+kp_convoy_CR_reward = 15;                                               //civil reputation reward for convoy side mission
 
 KP_liberation_resistance_tier2 = 30;                                    // At which strength (0-100) the guerilla forces will be at tier 2?
 KP_liberation_resistance_tier3 = 70;                                    // At which strength (0-100) the guerilla forces will be at tier 3?
@@ -470,7 +495,15 @@ KP_liberation_allowed_items_extension = [
     "rhsusf_acc_g33_xps3_tan_flip",
     "sma_spitfire_03_rds_low_ard_red",
     "UK3CB_BAF_AT4_CS_AP_Mag",
-    "UK3CB_BAF_Javelin_Launcher"
+    "UK3CB_BAF_Javelin_Launcher",
+	//ww2 edit
+	"lib_acc_k98_bayo",
+	"lib_k98_gw",
+	"LIB_ACC_GW_SB_EMPTY",
+	"LIB_ACC_GL_DYAKONOV_Empty",
+	"LIB_ACC_M1891_Bayo",
+    "itemCompass",
+    "itemWatch"
 ];
 
 /* - Configuration settings for crates transported by vehicles.
@@ -611,19 +644,14 @@ box_transport_config = [
     ["rhsusf_M1083A1P2_D_fmtv_usarmy", -5.0, [0,-0.2,0.45], [0,-1.9,0.45]],
     ["rhsusf_M1083A1P2_WD_flatbed_fmtv_usarmy", -5.0, [0,-0.2,0.45], [0,-1.9,0.45]],
     ["rhsusf_M1083A1P2_WD_fmtv_usarmy", -5.0, [0,-0.2,0.45], [0,-1.9,0.45]],
-    ["rhsusf_M977A4_BKIT_M2_usarmy_d", -6.5, [0,0.4,0.1], [0,-1.3,0.1], [0,-3,0.1]],
-    ["rhsusf_M977A4_BKIT_M2_usarmy_wd", -6.5, [0,0.4,0.1], [0,-1.3,0.1], [0,-3,0.1]],
-    ["rhsusf_M977A4_BKIT_usarmy_d", -6.5, [0,0.4,0.8], [0,-1.3,0.8], [0,-3,0.8]],
-    ["rhsusf_M977A4_BKIT_usarmy_wd", -6.5, [0,0.4,0.8], [0,-1.3,0.8], [0,-3,0.8]],
-    ["rhsusf_M977A4_usarmy_d", -6.5, [0,0.4,0.8], [0,-1.3,0.8], [0,-3,0.8]],
-    ["rhsusf_M977A4_usarmy_wd", -6.5, [0,0.4,0.8], [0,-1.3,0.8], [0,-3,0.8]],
+    ["rhsusf_M977A4_BKIT_M2_usarmy_d", -6.5, [0,0.4,0.7], [0,-1.3,0.7], [0,-3,0.7]],
+    ["rhsusf_M977A4_BKIT_M2_usarmy_wd", -6.5, [0,0.4,0.7], [0,-1.3,0.7], [0,-3,0.7]],
+    ["rhsusf_M977A4_BKIT_usarmy_d", -6.5, [0,0.4,1.4], [0,-1.3,1.4], [0,-3,1.4]],
+    ["rhsusf_M977A4_BKIT_usarmy_wd", -6.5, [0,0.4,1.4], [0,-1.3,1.4], [0,-3,1.4]],
+    ["rhsusf_M977A4_usarmy_d", -6.5, [0,0.4,1.4], [0,-1.3,1.4], [0,-3,1.4]],
+    ["rhsusf_M977A4_usarmy_wd", -6.5, [0,0.4,1.4], [0,-1.3,1.4], [0,-3,1.4]],
     ["rhsusf_m998_d_2dr_halftop", -4.5, [0,-0.9,-0.2]],
     ["rhsusf_m998_w_2dr_halftop", -4.5, [0,-0.9,-0.2]],
-    ["rhsusf_M1239_socom_d", -5, [-0.125,-1.73,-0.66], [0,-3.28,-0.66]],
-    ["rhsusf_M1239_M2_socom_d", -5, [-0.125,-1.73,-0.66], [0,-3.28,-0.66]],
-    ["rhsusf_M1239_MK19_socom_d", -5, [-0.125,-1.73,-0.66], [0,-3.28,-0.66]],
-    ["sfp_tgb30", -5, [0.2,-0.1,2], [0.2,-2.1,2]],
-    ["sfp_tgb40", -5, [0.1,-0.7,2], [0.1,-2.7,2]],
     ["UK3CB_BAF_Merlin_HC3_18_DPMT", -7.5, [0.25,3.7,-1.5], [0.25,1.6,-1.5], [0.25,-0.4,-1.5]],
     ["UK3CB_BAF_Merlin_HC3_32_MTP", -7.5, [0.25,3.7,-1.5], [0.25,1.6,-1.5], [0.25,-0.4,-1.5]],
     ["UK3CB_BAF_Merlin_HC3_CSAR_MTP", -7.5, [0.25,3.7,-1.5], [0.25,1.6,-1.5], [0.25,-0.4,-1.5]],
@@ -636,7 +664,64 @@ box_transport_config = [
     ["uns_m37b1", -5, [0,-1.8,0.15]],
     ["uns_nvatruck_mg", -5, [0,-1.05,0.8], [0,-2.75,0.8]],
     ["uns_nvatruck_open", -5, [0,-1.05,0.8], [0,-2.75,0.8]],
-    ["uns_nvatruck", -5, [0,-1.05,0.8], [0,-2.75,0.8]]
+    ["uns_nvatruck", -5, [0,-1.05,0.8], [0,-2.75,0.8]],
+	//WW2 Edit
+	["LIB_OpelBlitz_Open_Y_Camo", -6.5, [0,0,0.659], [0,-0.9,0.68], [0,-1.95,0.68]],    
+	["LIB_OpelBlitz_Tent_Y_Camo", -6.5, [0,-0.2,0.659], [0,-0.9,0.68], [0,-1.95,0.68]],    
+	["LIB_opelblitz_tentB_Winter", -6.5, [0,-0.2,0.659], [0,-0.9,0.68], [0,-1.95,0.68]],    
+	["LIB_opelblitz_open_Winter", -6.5, [0,0,0.659], [0,-0.9,0.68], [0,-1.95,0.68]],    
+	["LIB_opelblitz_tentG_Winter", -6.5, [0,-0.2,0.659], [0,-0.9,0.68], [0,-1.95,0.68]],    
+	["LIB_opelblitz_tentB_Tarn", -6.5, [0,-0.2,0.659], [0,-0.9,0.68], [0,-1.95,0.68]],    
+	["LIB_opelblitz_open_Tarn", -6.5, [0,0,0.659], [0,-0.9,0.68], [0,-1.95,0.68]],    
+	["LIB_opelblitz_tentB_Feldgrau", -6.5, [0,-0.2,0.659], [0,-0.9,0.68], [0,-1.95,0.68]],    
+	["LIB_opelblitz_open_Feldgrau", -6.5, [0,0,0.659], [0,-0.9,0.68], [0,-1.95,0.68]],    
+	["LIB_opelblitz_tentG_Feldgrau", -6.5, [0,-0.2,0.659], [0,-0.9,0.68], [0,-1.95,0.68]],    
+	["LIB_opelblitz_tentB_Camo", -6.5, [0,-0.2,0.659], [0,-0.9,0.68], [0,-1.95,0.68]],    
+	["LIB_opelblitz_open_Camo", -6.5, [0,0,0.659], [0,-0.9,0.68], [0,-1.95,0.68]],    
+	["LIB_DAK_OpelBlitz_Open", -6.5, [0,0,0.659], [0,-0.9,0.68], [0,-1.95,0.68]],    
+	["LIB_DAK_OpelBlitz_Tent", -6.5, [0,-0.2,0.659], [0,-0.9,0.68], [0,-1.95,0.68]],    
+	["LIB_OpelBlitz_Open_Y_Camo_w", -6.5, [0,0,0.659], [0,-0.9,0.68], [0,-1.95,0.68]],    
+	["LIB_OpelBlitz_Tent_Y_Camo_w", -6.5, [0,-0.2,0.659], [0,-0.9,0.68], [0,-1.95,0.68]],    
+	["LIB_OpelBlitz_Open_G_Camo_w", -6.5, [0,0,0.659], [0,-0.9,0.68], [0,-1.95,0.68]],    
+	["LIB_Zis5v_w", -6.5, [0,-0.4,-0.02], [0,-1.9,-0.02]],
+	["LIB_SOV_ZiS5V_PART", -6.5, [0,-0.4,-0.02], [0,-1.9,-0.02]],
+	["LIB_sov_GMC_CCKW353cf_Stud2zelOpen", -6.5, [0,-0.59,1], [0,-1.8,1], [0,-2.6,1]],
+	["LIB_sov_GMC_CCKW353cf_Stud2zelTent", -6.5, [0,-0.59,0.77], [0,-1.8,0.77], [0,-2.6,0.77]],
+	["LIB_SOV_ZiS5V_RKKA", -6.5, [0,-0.4,-0.02], [0,-1.9,-0.02]],
+	["LIB_US6_Tent_Cargo", -6.5, [0,-0.59,0.77], [0,-1.8,0.77], [0,-2.6,0.77]],
+	["LIB_US6_Tent", -6.5, [0,-0.59,0.77], [0,-1.8,0.77], [0,-2.6,0.77]],
+	["LIB_US6_Open", -6.5, [0,-0.59,1], [0,-1.8,1], [0,-2.6,1]],
+	["LIB_US6_Open_Cargo", -6.5, [0,-0.59,1], [0,-1.8,1], [0,-2.6,1]],
+	["LIB_Zis5v", -6.5, [0,-0.4,-0.02], [0,-1.9,-0.02]],
+	["LIB_US_GMC_Tent_w", -6.5, [0,-0.59,0.77], [0,-1.8,0.77], [0,-2.6,0.77]],
+	["LIB_US_GMC_Open_w", -6.5, [0,-0.59,1], [0,-1.8,1], [0,-2.6,1]],
+	["LIB_pol_opelblitz_open_Tarn_Czata", -6.5, [0,0,0.659], [0,-0.9,0.68], [0,-1.95,0.68]],
+	["LIB_pol_opelblitz_tentB_Tarn_Czata", -6.5, [0,0,0.659], [0,-0.9,0.68], [0,-1.95,0.68]],
+	["LIB_CIV_FFI_CitC4", -6.5, [0,-0.4,-0.02], [0,-1.9,-0.02]],
+	["LIB_CIV_FFI_CitC4_4", -6.5, [0,-0.4,-0.02], [0,-1.9,-0.02]],
+	["LIB_CIV_FFI_CitC4_2", -6.5, [0,-0.4,-0.02], [0,-1.9,-0.02]],
+	["LIB_CIV_FFI_CitC4_3", -6.5, [0,-0.4,-0.02], [0,-1.9,-0.02]],
+	["LIB_CIV_FFI_CitC4_5", -6.5, [0,-0.4,-0.02], [0,-1.9,-0.02]],
+	["LIB_FRA_CitC4FFI", -6.5, [0,-0.4,-0.02], [0,-1.9,-0.02]],
+	["LIB_AustinK5_Open", -6.5, [0,0.4,-0.05], [0,-0.7,-0.05], [0,-1.8,-0.05]],
+	["LIB_AustinK5_Tent", -6.5, [0,0.4,-0.05], [0,-0.7,-0.05], [0,-1.8,-0.05]],
+	["LIB_AustinK5_DR_Open", -6.5, [0,0.4,-0.05], [0,-0.7,-0.05], [0,-1.8,-0.05]],
+	["LIB_AustinK5_DR_Tent", -6.5, [0,0.4,-0.05], [0,-0.7,-0.05], [0,-1.8,-0.05]],
+	["LIB_US_GMC_Tent", -6.5, [0,-0.59,0.77], [0,-1.8,0.77], [0,-2.6,0.77]],
+	["LIB_US_GMC_Open", -6.5, [0,-0.59,1], [0,-1.8,1], [0,-2.6,1]],
+	["LIB_usa_GMC_CCKW353cf_KakiOpen", -6.5, [0,-0.59,1], [0,-1.8,1], [0,-2.6,1]],
+	["LIB_usa_GMC_CCKW353cf_KakiTent", -6.5, [0,-0.59,0.77], [0,-1.8,0.77], [0,-2.6,0.77]],
+	["LIB_usa_GMC_CCKW353cf_Stud2Open", -6.5, [0,-0.59,1], [0,-1.8,1], [0,-2.6,1]],
+	["LIB_usa_GMC_CCKW353cf_Stud2Tent", -6.5, [0,-0.59,0.77], [0,-1.8,0.77], [0,-2.6,0.77]],
+	["LIB_usa_GMC_CCKW353cf_Stud2zelOpen", -6.5, [0,-0.59,1], [0,-1.8,1], [0,-2.6,1]],
+	["LIB_usa_GMC_CCKW353cf_Stud2zelTent", -6.5, [0,-0.59,0.77], [0,-1.8,0.77], [0,-2.6,0.77]],
+	["LIB_US_NAC_GMC_Tent", -6.5, [0,-0.59,0.77], [0,-1.8,0.77], [0,-2.6,0.77]],
+	["LIB_FRA_CitC4", -6.5, [0,-0.4,-0.02], [0,-1.9,-0.02]],
+	["LIB_US_NAC_GMC_Open", -6.5, [0,-0.59,1], [0,-1.8,1], [0,-2.6,1]],
+	["LIB_SdKfz_7", -6.5, [0,-0.3,-0.05], [0,-1.35,-0.05], [0,-2.4,-0.05]],
+	["LIB_DAK_SdKfz_7", -6.5, [0,-0.3,-0.05], [0,-1.35,-0.05], [0,-2.4,-0.05]],
+	["LIB_SdKfz_7_w", -6.5, [0,-0.3,-0.05], [0,-1.35,-0.05], [0,-2.4,-0.05]],
+    ["Lib_ger_SdKfz7_Tarn53", -6.5, [0,-0.3,-0.05], [0,-1.35,-0.05], [0,-2.4,-0.05]]
 ];
 
 /* Various other settings.
@@ -668,18 +753,30 @@ ai_resupply_sources = [
     "O_Truck_03_ammo_F",
     "rhs_gaz66_ammo_msv",
     "rhsusf_M1078A1R_SOV_M2_D_fmtv_socom",
-    "rhsusf_M1239_MK19_Deploy_socom_d",
-    "rhsusf_M1239_M2_Deploy_socom_d",
     "rhsusf_M977A4_AMMO_BKIT_M2_usarmy_d",
     "rhsusf_M977A4_AMMO_BKIT_M2_usarmy_wd",
     "rhsusf_M977A4_AMMO_BKIT_usarmy_d",
     "rhsusf_M977A4_AMMO_BKIT_usarmy_wd",
     "rhsusf_M977A4_AMMO_usarmy_d",
     "rhsusf_M977A4_AMMO_usarmy_wd",
-    "sfp_tgb40_ammo",
     "uns_M113_ENG",
     "uns_M35A2_ammo",
-    "uns_motorpool1_repair"
+    "uns_motorpool1_repair",
+	//WW2 Edit
+	"LIB_SdKfz_7_Ammo",
+	"LIB_OpelBlitz_Ammo",
+	"LIB_DAK_OpelBlitz_Ammo",
+	"LIB_OpelBlitz_Ammo_w",
+	"LIB_sov_GMC_CCKW353cf_Stud2zelAmmo",
+	"LIB_US6_Ammo",
+	"LIB_US_GMC_Ammo_w",
+	"LIB_AustinK5_DR_Ammo",
+	"LIB_US_GMC_Ammo",
+	"LIB_usa_GMC_CCKW353cf_KakiAmmo",
+	"LIB_usa_GMC_CCKW353cf_Stud2zelAmmo",
+	"LIB_US_NAC_GMC_Ammo",
+    "INS_WarfareBVehicleServicePoint",
+    "LIB_AmmoCrates_NoInteractive_Large"
 ];
 
 // Everything that can resupply other vehicles.
@@ -707,19 +804,28 @@ vehicle_repair_sources = [
     "O_Truck_03_repair_F",
     "RHS_Ural_Repair_VDV_01",
     "rhsusf_M1078A1R_SOV_M2_D_fmtv_socom",
-    "rhsusf_M1239_MK19_Deploy_socom_d",
-    "rhsusf_M1239_M2_Deploy_socom_d",
     "rhsusf_M977A4_REPAIR_BKIT_M2_usarmy_d",
     "rhsusf_M977A4_REPAIR_BKIT_M2_usarmy_wd",
     "rhsusf_M977A4_REPAIR_BKIT_usarmy_d",
     "rhsusf_M977A4_REPAIR_BKIT_usarmy_wd",
     "rhsusf_M977A4_REPAIR_usarmy_d",
     "rhsusf_M977A4_REPAIR_usarmy_wd",
-    "sfp_tgb30_repair",
     "UNS_Hanger_repair",
     "uns_M113_ENG",
     "uns_M35A2_repair",
-    "uns_motorpool1_repair"
+    "uns_motorpool1_repair",
+	//WW2 Edit
+	"LIB_Zis6_Parm",
+	"LIB_OpelBlitz_Parm",
+	"LIB_OpelBlitz_Parm_w",
+	"LIB_DAK_OpelBlitz_Parm",
+	"LIB_Zis6_parm_w",
+	"LIB_SOV_ZiS6Parm_RKKA",
+	"LIB_US_GMC_Parm_w",
+	"LIB_US_GMC_Parm",
+	"LIB_US_NAC_GMC_Parm",
+    "INS_WarfareBVehicleServicePoint",
+    "Land_Workbench_01_F"
 ];
 
 vehicle_rearm_sources = [
@@ -749,17 +855,29 @@ vehicle_rearm_sources = [
     "O_Truck_03_ammo_F",
     "rhs_gaz66_ammo_msv",
     "rhsusf_M1078A1R_SOV_M2_D_fmtv_socom",
-    "rhsusf_M1239_MK19_Deploy_socom_d",
-    "rhsusf_M1239_M2_Deploy_socom_d",
     "rhsusf_M977A4_AMMO_BKIT_M2_usarmy_d",
     "rhsusf_M977A4_AMMO_BKIT_M2_usarmy_wd",
     "rhsusf_M977A4_AMMO_BKIT_usarmy_d",
     "rhsusf_M977A4_AMMO_BKIT_usarmy_wd",
     "rhsusf_M977A4_AMMO_usarmy_d",
     "rhsusf_M977A4_AMMO_usarmy_wd",
-    "sfp_tgb40_ammo",
     "uns_M113_ENG",
-    "uns_M35A2_ammo"
+    "uns_M35A2_ammo",
+	//WW2 Edit
+	"LIB_SdKfz_7_Ammo",
+	"LIB_OpelBlitz_Ammo",
+	"LIB_DAK_OpelBlitz_Ammo",
+	"LIB_OpelBlitz_Ammo_w",
+	"LIB_sov_GMC_CCKW353cf_Stud2zelAmmo",
+	"LIB_US6_Ammo",
+	"LIB_US_GMC_Ammo_w",
+	"LIB_AustinK5_DR_Ammo",
+	"LIB_US_GMC_Ammo",
+	"LIB_usa_GMC_CCKW353cf_KakiAmmo",
+	"LIB_usa_GMC_CCKW353cf_Stud2zelAmmo",
+	"LIB_US_NAC_GMC_Ammo",
+    "INS_WarfareBVehicleServicePoint",
+    "LIB_AmmoCrates_NoInteractive_Large"
 ];
 
 vehicle_refuel_sources = [
@@ -791,16 +909,25 @@ vehicle_refuel_sources = [
     "O_Truck_03_fuel_F",
     "RHS_Ural_Fuel_VDV_01",
     "rhsusf_M1078A1R_SOV_M2_D_fmtv_socom",
-    "rhsusf_M1239_MK19_Deploy_socom_d",
-    "rhsusf_M1239_M2_Deploy_socom_d",
     "rhsusf_M978A4_BKIT_usarmy_d",
     "rhsusf_M978A4_BKIT_usarmy_wd",
     "rhsusf_M978A4_usarmy_d",
     "rhsusf_M978A4_usarmy_wd",
-    "sfp_tgb40_fuel",
     "uns_M113_ENG",
     "uns_M35A2_fuel",
-    "uns_M35A2_fueltanker"
+    "uns_M35A2_fueltanker",
+	//WW2 Edit
+	"LIB_Zis5v_Fuel",
+	"LIB_OpelBlitz_Fuel",
+	"LIB_DAK_OpelBlitz_Fuel",
+	"LIB_OpelBlitz_Fuel_w",
+	"LIB_Zis5v_fuel_w",
+	"LIB_SOV_ZiS6Fuel_RKKA",
+	"LIB_US_GMC_Fuel",
+	"LIB_US_GMC_Fuel_w",
+	"LIB_US_NAC_GMC_Fuel",
+    "INS_WarfareBVehicleServicePoint",
+    "Land_Ind_TankSmall2"
 ];
 
 // Classnames of boats, so they can be built on water.
@@ -822,7 +949,9 @@ boats_names = [
     "uns_PBR_M10",
     "uns_pbr_mk18",
     "uns_pbr",
-    "UNS_Zodiac_W"
+    "UNS_Zodiac_W",
+    //ww2 edit
+    "LIB_LCA"
 ];
 
 // Large storage area placement position offsets.

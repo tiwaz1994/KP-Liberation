@@ -36,5 +36,6 @@ civilian_vehicles = [
     "LIB_GazM1",
 	"LIB_GazM1_dirty",
 	"LIB_FRA_CitC4Ferme",
-	"LIB_FRA_CitC4"
+	"LIB_FRA_CitC4",
+	"LIB_SOV_ZiS5V_PART"
 ];

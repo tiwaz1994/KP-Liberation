@@ -1,7 +1,7 @@
 private _convoy_destinations_markers = [];
 private _load_box_fnc = compileFinal preprocessFileLineNumbers "scripts\client\ammoboxes\do_load_box.sqf";
 
-while { count _convoy_destinations_markers < 3 } do { _convoy_destinations_markers pushback ([2000,999999,false] call F_findOpforSpawnPoint); };
+while { count _convoy_destinations_markers < 3 } do { _convoy_destinations_markers pushback ([2000,6000,false] call F_findOpforSpawnPoint); };
 
 private _couldnt_spawn = false;
 { if ( _x == "" ) exitWith { _couldnt_spawn = true; }; } foreach _convoy_destinations_markers;
@@ -155,6 +155,7 @@ deleteMarker _convoy_marker;
 { deleteMarker _x } foreach [_convoy_marker_wp1, _convoy_marker_wp2, _convoy_marker_wp3 ];
 
 combat_readiness = round (combat_readiness * 0.85);
+[kp_convoy_CR_reward] call F_cr_changeCR;
 stats_secondary_objectives = stats_secondary_objectives + 1;
 [5] remoteExec ["remote_call_intel"];
 GRLIB_secondary_in_progress = -1; publicVariable "GRLIB_secondary_in_progress";

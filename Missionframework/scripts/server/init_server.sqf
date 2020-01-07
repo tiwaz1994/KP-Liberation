@@ -92,6 +92,22 @@ switch (KP_liberation_preset_opfor) do {
             "scripts\fob_templates\unsung\template5.sqf"
         ];
     };
+    case 18: {
+        KPLIB_fob_templates = [
+            "scripts\fob_templates\ww2\template1.sqf",
+            "scripts\fob_templates\ww2\template2.sqf",
+            "scripts\fob_templates\ww2\template3.sqf",
+            "scripts\fob_templates\ww2\template4.sqf",
+            "scripts\fob_templates\ww2\template5.sqf",
+			"scripts\fob_templates\ww2\template6.sqf",
+			"scripts\fob_templates\ww2\template7.sqf",
+			"scripts\fob_templates\ww2\template8.sqf",
+			"scripts\fob_templates\ww2\template9.sqf",
+			"scripts\fob_templates\ww2\template10.sqf",
+			"scripts\fob_templates\ww2\template11.sqf"
+			
+        ];
+    };
     default {
         KPLIB_fob_templates = [
             "scripts\fob_templates\default\template1.sqf",

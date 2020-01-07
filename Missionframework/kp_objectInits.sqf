@@ -21,5 +21,13 @@ KPLIB_objectInits = [
     [KP_liberation_medical_vehicles, {_this setVariable ["ace_medical_medicClass", 1, true];}],
 
     // Hide Cover on big GM trucks
-    [["gm_ge_army_kat1_454_cargo", "gm_ge_army_kat1_454_cargo_win"], {_this animateSource ["cover_unhide", 0, true];}]
+    [["gm_ge_army_kat1_454_cargo", "gm_ge_army_kat1_454_cargo_win"], {_this animateSource ["cover_unhide", 0, true];}],
+
+    //set ACE resupply,refuel,repair objects
+    [["LIB_AmmoCrates_NoInteractive_Large"], {_this setVariable ["ace_rearm_isSupplyVehicle", true]; _this call ace_rearm_fnc_initSupplyVehicle;}],
+    [["Land_Ind_TankSmall2"], {[_this,1000] call ace_refuel_fnc_makeSource;}],
+    [["Land_Workbench_01_F"], {_this setVariable ["ace_isRepairFacility", 1, true];}],
+
+    //change skins
+    [["LIB_FIN_StuG_III_G_Ps531"], {[_this,["Ps53110",1],true] call BIS_fnc_initVehicle;}]
 ];

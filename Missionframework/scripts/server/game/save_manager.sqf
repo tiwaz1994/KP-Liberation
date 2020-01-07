@@ -279,7 +279,7 @@ if (!isNil "greuh_liberation_savegame") then {
 
     // Apply current date and time
     if (_dateTime isEqualType []) then {
-        setDate _dateTime;
+        setDate [1944,6,25,8,0]; //setDate _dateTime;
     } else {
         setDate [2045, 6, 6, _dateTime, 0]; // Compatibility for older save data
     };

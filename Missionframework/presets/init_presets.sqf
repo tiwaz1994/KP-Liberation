@@ -26,6 +26,7 @@ switch (KP_liberation_preset_blufor) do {
     case 25: {[] call compileFinal preprocessFileLineNumbers "presets\blufor\sfp_wdl.sqf";};
     case 26: {[] call compileFinal preprocessFileLineNumbers "presets\blufor\sfp_des.sqf";};
     case 27: {[] call compileFinal preprocessFileLineNumbers "presets\blufor\enoch.sqf";};
+	case 28: {[] call compileFinal preprocessFileLineNumbers "presets\blufor\finns_WW2.sqf";};
     default  {[] call compileFinal preprocessFileLineNumbers "presets\blufor\custom.sqf";};
 };
 
@@ -47,6 +48,7 @@ switch (KP_liberation_preset_opfor) do {
     case 15: {[] call compileFinal preprocessFileLineNumbers "presets\opfor\CUP_ChDKZ.sqf";};
     case 16: {[] call compileFinal preprocessFileLineNumbers "presets\opfor\CUP_AFRF_MSV.sqf";};
     case 17: {[] call compileFinal preprocessFileLineNumbers "presets\opfor\CUP_AFRF_ModernMSV.sqf";};
+    case 18: {[] call compileFinal preprocessFileLineNumbers "presets\opfor\soviet_ww2.sqf";};
     default  {[] call compileFinal preprocessFileLineNumbers "presets\opfor\custom.sqf";};
 };
 
@@ -59,6 +61,7 @@ switch (KP_liberation_preset_resistance) do {
     case  6: {[] call compileFinal preprocessFileLineNumbers "presets\resistance\unsung.sqf";};
     case  7: {[] call compileFinal preprocessFileLineNumbers "presets\resistance\CUP_TakiLocals.sqf";};
     case  8: {[] call compileFinal preprocessFileLineNumbers "presets\resistance\CUP_NAPA.sqf";};
+	case  9: {[] call compileFinal preprocessFileLineNumbers "presets\resistance\sovietRes_ww2.sqf";};
     default  {[] call compileFinal preprocessFileLineNumbers "presets\resistance\custom.sqf";};
 };
 
@@ -70,16 +73,17 @@ switch (KP_liberation_preset_civilians) do {
     case  5: {[] call compileFinal preprocessFileLineNumbers "presets\civilians\unsung.sqf";};
     case  6: {[] call compileFinal preprocessFileLineNumbers "presets\civilians\CUP_TakiCivs.sqf";};
     case  7: {[] call compileFinal preprocessFileLineNumbers "presets\civilians\CUP_ChernoCivs.sqf";};
+	case  8: {[] call compileFinal preprocessFileLineNumbers "presets\civilians\sovietCiv_ww2.sqf";};
     default  {[] call compileFinal preprocessFileLineNumbers "presets\civilians\custom.sqf";};
 };
 
 // Prices for the blufor infantry squads (supplies, ammo, fuel)
 squads = [
-    [blufor_squad_inf_light,200,0,0],
-    [blufor_squad_inf,300,0,0],
-    [blufor_squad_at,200,250,0],
-    [blufor_squad_aa,200,250,0],
-    [blufor_squad_recon,250,0,0],
+    [blufor_squad_inf_light,150,0,0],
+    [blufor_squad_inf,200,50,0],
+    [blufor_squad_at,200,150,0],
+    [blufor_squad_aa,200,150,0],
+    [blufor_squad_recon,200,0,0],
     [blufor_squad_para,200,0,0]
 ];
 
@@ -133,7 +137,19 @@ GRLIB_ignore_colisions_when_building = [
     "B_Mortar_01_F",                                                    // Mk6 Mortar
     "ACE_friesAnchorBar",                                               // ACE FRIES
     "ACE_friesGantryReverse",                                           // ACE FRIES
-    "ACE_friesGantry"                                                   // ACE FRIES
+    "ACE_friesGantry",                                                   // ACE FRIES
+    //ww2edit
+    "Land_WW2_BET_Achtung_Minen",
+    "Land_I44_Buildings_Sign_Minen",
+    "Fort_RazorWire",
+    "Land_ClutterCutter_large_F",
+    "Land_WW2_CamoNet_Tank",
+    "Land_WW2_CamoNet_NATO_Var1",
+    "Land_WW2_Fortification_Trench_Long_X3",
+    "Land_WW2_Fortification_Trench_Bridge",
+    "Land_WW2_Fortification_Trench_Corner_90",
+    "Land_WW2_Fortification_Trench_Bunker_FFP",
+    "Land_WW2_Fortification_Trench_Wide"
 ];
 
 
@@ -179,10 +195,10 @@ civilians = civilians select {[_x] call F_checkClass};
 civilian_vehicles = civilian_vehicles select {[_x] call F_checkClass};
 military_alphabet = ["Alpha","Bravo","Charlie","Delta","Echo","Foxtrot","Golf","Hotel","India","Juliet","Kilo","Lima","Mike","November","Oscar","Papa","Quebec","Romeo","Sierra","Tango","Uniform","Victor","Whiskey","X-Ray","Yankee","Zulu"];
 land_vehicles_classnames = (opfor_vehicles + militia_vehicles);
-opfor_squad_8_standard = [opfor_squad_leader,opfor_team_leader,opfor_machinegunner,opfor_heavygunner,opfor_medic,opfor_marksman,opfor_grenadier,opfor_rpg];
-opfor_squad_8_infkillers = [opfor_squad_leader,opfor_machinegunner,opfor_machinegunner,opfor_heavygunner,opfor_medic,opfor_marksman,opfor_sharpshooter,opfor_sniper];
-opfor_squad_8_tankkillers = [opfor_squad_leader,opfor_medic,opfor_machinegunner,opfor_rpg,opfor_rpg,opfor_at,opfor_at,opfor_at];
-opfor_squad_8_airkillers = [opfor_squad_leader,opfor_medic,opfor_machinegunner,opfor_rpg,opfor_rpg,opfor_aa,opfor_aa,opfor_aa];
+opfor_squad_8_standard = [opfor_squad_leader,opfor_team_leader,opfor_rifleman,opfor_medic,opfor_heavygunner,opfor_at,opfor_grenadier,opfor_rpg];
+opfor_squad_8_infkillers = [opfor_squad_leader,opfor_machinegunner,opfor_marksman,opfor_medic,opfor_grenadier,opfor_rpg,opfor_sniper];
+opfor_squad_8_tankkillers = [opfor_squad_leader,opfor_medic,opfor_at,opfor_rpg,opfor_rpg,opfor_at,opfor_at,opfor_at];
+opfor_squad_8_airkillers = [opfor_squad_leader,opfor_medic,opfor_aa,opfor_rpg,opfor_rpg,opfor_aa,opfor_aa,opfor_aa];
 friendly_infantry_classnames = [];
 {friendly_infantry_classnames pushBackUnique _x;} forEach (blufor_squad_inf_light + blufor_squad_inf + blufor_squad_at + blufor_squad_aa + blufor_squad_recon + blufor_squad_para);
 {friendly_infantry_classnames pushBackUnique (_x select 0);} forEach infantry_units;
@@ -203,7 +219,7 @@ ammobox_transports_typenames = [];
 ammobox_transports_typenames = ammobox_transports_typenames select {[_x] call F_checkClass};
 elite_vehicles = elite_vehicles select {[_x] call F_checkClass};
 opfor_infantry = [opfor_sentry,opfor_rifleman,opfor_grenadier,opfor_squad_leader,opfor_team_leader,opfor_marksman,opfor_machinegunner,opfor_heavygunner,opfor_medic,opfor_rpg,opfor_at,opfor_aa,opfor_officer,opfor_sharpshooter,opfor_sniper,opfor_engineer];
-GRLIB_intel_file = "Land_File1_F";
-GRLIB_intel_laptop = "Land_Laptop_device_F";
-GRLIB_sar_wreck = "Land_Wreck_Heli_Attack_01_F";
+GRLIB_intel_file = "EvKobalt";
+GRLIB_intel_laptop = "EvMap";
+GRLIB_sar_wreck = "LIB_FW190F8_MRWreck";
 GRLIB_sar_fire = "test_EmptyObjectForFireBig";

@@ -13,7 +13,7 @@ private _building_classnames = [];
 {
 	_building_classnames pushBack ( _x select 0 );
 } foreach (buildings);
-_building_classnames = _building_classnames + ["B_Slingload_01_Cargo_F", "B_Slingload_01_Repair_F", "B_Slingload_01_Fuel_F", "B_Slingload_01_Ammo_F"];
+_building_classnames = _building_classnames + ["B_Slingload_01_Cargo_F", "B_Slingload_01_Repair_F", "B_Slingload_01_Fuel_F", "B_Slingload_01_Ammo_F","LIB_AmmoCrates_NoInteractive_Large","Land_Ind_TankSmall2","Land_Workbench_01_F"];
 
 waitUntil {sleep 1; !isNil "GRLIB_all_fobs"};
 
