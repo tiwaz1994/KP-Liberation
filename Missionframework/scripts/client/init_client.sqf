@@ -48,6 +48,7 @@ execVM "scripts\client\markers\fob_markers.sqf";
 if (KP_liberation_mapmarkers) then {execVM "scripts\client\markers\group_icons.sqf";};
 execVM "scripts\client\markers\hostile_groups.sqf";
 if (KP_liberation_mapmarkers) then {execVM "scripts\client\markers\huron_marker.sqf";} else {deleteMarkerLocal "huronmarker"};
+if (KP_liberation_mapmarkers) then {execVM "scripts\client\markers\fobTruck_marker.sqf";} else {deleteMarkerLocal "fobTruckMarker"};
 execVM "scripts\client\markers\sector_manager.sqf";
 execVM "scripts\client\markers\spot_timer.sqf";
 execVM "scripts\client\misc\broadcast_squad_colors.sqf";
