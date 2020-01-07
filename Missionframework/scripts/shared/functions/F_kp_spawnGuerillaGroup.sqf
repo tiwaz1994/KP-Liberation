@@ -24,7 +24,16 @@ private _weapons = missionNamespace getVariable ("KP_liberation_guerilla_weapons
 private _uniforms = missionNamespace getVariable ("KP_liberation_guerilla_uniforms_" + str _tier);
 private _vests = missionNamespace getVariable ("KP_liberation_guerilla_vests_" + str _tier);
 private _headgear = missionNamespace getVariable ("KP_liberation_guerilla_headgear_" + str _tier);
-
+private _facegear = KP_liberation_guerilla_facegear;
+private _allegiance = GRLIB_side_friendly getFriend GRLIB_side_resistance;
+if (_allegiance < 0.6 && !(isNil "advanced_resistance_settings")) then 
+{
+	_weapons = missionNamespace getVariable ("KP_liberation_guerilla_weapons_enemy_" + str _tier);
+	_uniforms = missionNamespace getVariable ("KP_liberation_guerilla_uniforms_enemy_" + str _tier);
+	_vests = missionNamespace getVariable ("KP_liberation_guerilla_vests_enemy_" + str _tier);
+	_headgear = missionNamespace getVariable ("KP_liberation_guerilla_headgear_enemy_" + str _tier);
+	_facegear = KP_liberation_guerilla_facegear_enemy;
+};
 while {(count (units _grp) < _amount)} do {
 	private _unit = _grp createUnit [(selectRandom KP_liberation_guerilla_units), _pos, [], 5, "NONE"];
 	_unit addMPEventHandler ["MPKilled", {_this spawn kill_manager}];
@@ -41,12 +50,12 @@ while {(count (units _grp) < _amount)} do {
 
 	_unit forceAddUniform (selectRandom _uniforms);
 	_unit addItemToUniform "FirstAidKit";
-	_unit addItemToUniform "MiniGrenade";
+	if (isNil "KP_liberation_guerilla_grenade") then {_unit addItemToUniform "MiniGrenade";} else {_unit addItemToUniform KP_liberation_guerilla_grenade};
 	_unit addVest (selectRandom _vests);
 	for "_i" from 1 to (_weapon select 2) do {_unit addItemToVest (_weapon select 1);};
 	_unit addHeadgear (selectRandom _headgear);
 	if (_tier > 1) then {
-		_unit addGoggles (selectRandom KP_liberation_guerilla_facegear);
+		_unit addGoggles (selectRandom _facegear);
 	};
 
 	_unit addWeapon (_weapon select 0);
@@ -57,11 +66,15 @@ while {(count (units _grp) < _amount)} do {
 	_unit linkItem "ItemCompass";
 	_unit linkItem "ItemWatch";
 	_unit linkItem "ItemRadio";
-
+	
 	if ((_tier > 1) && ((random 100) <= KP_liberation_resistance_at_chance)) then {
-		_unit addBackpack "B_FieldPack_cbr";
-		for "_i" from 1 to 3 do {_unit addItemToBackpack "RPG7_F";};
-		_unit addWeapon "launch_RPG7_F";
+		_weap = objNull;
+		if (isNil "KP_liberation_guerilla_at_backpack") then {_unit addBackpack "B_FieldPack_cbr"} else {_unit addBackpack KP_liberation_guerilla_at_backpack};
+		if (isNil "KP_liberation_guerilla_at_weapon") then {_weap = "launch_RPG7_F"} else {_weap = KP_liberation_guerilla_at_weapon};
+		_ammoArray = getArray (configFile >> "CfgWeapons" >> _weap >> "magazines");
+		_mag = selectRandom _ammoArray;
+		for "_i" from 1 to 3 do {_unit addItemToBackpack _mag;};
+		_unit addWeapon _weap;
 	};
 };
 
