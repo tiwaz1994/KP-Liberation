@@ -32,6 +32,7 @@ while {true} do {
 
             for "_idx" from 0 to ((count _respawn_trucks) - 1) do {
                 _marker = createMarkerLocal [format ["mobilespawn%1", _idx], markers_reset];
+                _marker setMarkerAlpha 0;
                 _marker setMarkerTypeLocal "mil_end";
                 _marker setMarkerColorLocal "ColorYellow";
                 _markers_mobilespawns pushback _marker;
