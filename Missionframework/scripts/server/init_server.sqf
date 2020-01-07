@@ -44,7 +44,11 @@ execVM "scripts\server\battlegroup\readiness_increase.sqf";
 execVM "scripts\server\game\apply_default_permissions.sqf";
 execVM "scripts\server\game\capture_vehicles.sqf";
 execVM "scripts\server\game\cleanup_vehicles.sqf";
-if (!KP_liberation_fog_param) then {execVM "scripts\server\game\fucking_set_fog.sqf";};
+switch (KP_liberation_fog_param) do {
+    case 0: {execVM "scripts\server\game\fucking_set_fog.sqf"};
+    case 1: {};
+    case 2: {execVM "scripts\server\game\Tiwaz_Smooth_Dynamic_Fog.sqf"};
+};
 execVM "scripts\server\game\manage_time.sqf";
 execVM "scripts\server\game\manage_weather.sqf";
 execVM "scripts\server\game\periodic_save.sqf";
