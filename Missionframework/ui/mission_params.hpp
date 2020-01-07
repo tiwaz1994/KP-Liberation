@@ -104,9 +104,9 @@ class Params
     };
     class VanillaFog {
         title = $STR_FOG_PARAM;
-        values[] = {1, 0};
-        texts[] = {$STR_PARAMS_ENABLED, $STR_PARAMS_DISABLED};
-        default = 1;
+        values[] = {2, 1, 0};
+        texts[] = {TiwazSmoothDynamicFog,$STR_PARAMS_ENABLED, $STR_PARAMS_DISABLED};
+        default = 2;
     };
     class ResourcesMultiplier {
         title = $STR_PARAMS_RESOURCESMULTIPLIER;
