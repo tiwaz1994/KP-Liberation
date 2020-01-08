@@ -90,6 +90,9 @@ GRLIB_arsenal_magazines = [
 	"GLIB_FIN_8Rnd_9x19mm",
 	"LIB_8Rnd_9x19_P08",
 	//grenades
+	"NORTH_F1Grenade_mag",
+	"NORTH_RG42Nade_mag",
+	"NORTH_RGD33Grenade_mag",
 	"NORTH_molotov_NOR",
 	"NORTH_NOR_IMPROV_SMOKE",
 	"NORTH_NOR_IMPROV_GRENADE",
