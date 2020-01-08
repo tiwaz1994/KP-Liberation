@@ -3429,7 +3429,7 @@
             Your mission is to stop the OPFOR convoy by any means necessary. You can destroy it, or hijack it to retrieve all the ammunition&lt;br/&gt;
             you can grab. The target will be spotted on your map.&lt;/t&gt;
             &lt;br/&gt;&lt;br/&gt;
-            &lt;t size='1.15' color='#00a0ff'&gt;Cost: 10&lt;img image='\A3\Ui_f\data\GUI\Cfg\Ranks\general_gs.paa'/&gt;&lt;/t&gt;
+            &lt;t size='1.15' color='#00a0ff'&gt;Cost: 15&lt;img image='\A3\Ui_f\data\GUI\Cfg\Ranks\general_gs.paa'/&gt;&lt;/t&gt;
             &lt;br/&gt;
             &lt;t size='1.15' color='#ffa000'&gt;Reward: OPFOR alert level reduced by 15% and 15 Civilian reputation&lt;/t&gt;
             &lt;br/&gt;
@@ -3463,7 +3463,7 @@
             &lt;t size='1'&gt;
             Ihr Auftrag ist es, den OPFOR Konvoi auf jede erdenkliche Weise zu stoppen. Sie können ihn zerstören oder übernehmen, um soviel Munition wie möglich zu erbeuten. Das Ziel wird auf Ihrer Karte aufgeklärt.&lt;/t&gt;
             &lt;br/&gt;&lt;br/&gt;
-            &lt;t size='1.15' color='#00a0ff'&gt;Kosten: 10&lt;img image='\A3\Ui_f\data\GUI\Cfg\Ranks\general_gs.paa'/&gt;&lt;/t&gt;
+            &lt;t size='1.15' color='#00a0ff'&gt;Kosten: 15&lt;img image='\A3\Ui_f\data\GUI\Cfg\Ranks\general_gs.paa'/&gt;&lt;/t&gt;
             &lt;br/&gt;
             &lt;t size='1.15' color='#ffa000'&gt;Belohnung: OPFOR Alarmstatus wird um 15% reduziert&lt;/t&gt;
             &lt;br/&gt;
@@ -3480,7 +3480,7 @@
             &lt;t size='1'&gt;
             Tu misión consiste en parar ese convoy por cualquier medio. Puedes destruirlo o capturarlo para capturar toda la munición que sea posible. El objetivo aparecerá marcado en el mapa.&lt;/t&gt;
             &lt;br/&gt;&lt;br/&gt;
-            &lt;t size='1.15' color='#00a0ff'&gt;Coste: 10&lt;img image='\A3\Ui_f\data\GUI\Cfg\Ranks\general_gs.paa'/&gt;&lt;/t&gt;
+            &lt;t size='1.15' color='#00a0ff'&gt;Coste: 15&lt;img image='\A3\Ui_f\data\GUI\Cfg\Ranks\general_gs.paa'/&gt;&lt;/t&gt;
             &lt;br/&gt;
             &lt;t size='1.15' color='#ffa000'&gt;Recompensa: Nivel de alerta OPFOR reducido 15%&lt;/t&gt;
             &lt;br/&gt;
@@ -3496,7 +3496,7 @@
             &lt;t size='1'&gt;
             Ваша задача состоит в том, чтобы остановить конвой OPFOR любой ценой. Вы можете уничтожить его, или захватить его для получения ресурса вооружения. Цель будет отмечена на вашей карте.&lt;/t&gt;
             &lt;br/&gt;&lt;br/&gt;
-            &lt;t size='1.15' color='#00a0ff'&gt;Стоимость: 10&lt;img image='\A3\Ui_f\data\GUI\Cfg\Ranks\general_gs.paa'/&gt;&lt;/t&gt;
+            &lt;t size='1.15' color='#00a0ff'&gt;Стоимость: 15&lt;img image='\A3\Ui_f\data\GUI\Cfg\Ranks\general_gs.paa'/&gt;&lt;/t&gt;
             &lt;br/&gt;
             &lt;t size='1.15' color='#ffa000'&gt;Награда: уровень обеспокоенности OPFOR уменьшится на 15%&lt;/t&gt;
             &lt;br/&gt;
@@ -3513,7 +3513,7 @@
             &lt;t size='1'&gt;
             La tua missione è quella di fermare il convoglio OPFOR con ogni mezzo necessario. Si può distruggerlo, o dirottarlo e recuperare tutte le munizioni. L'obiettivo sarà evidenziato sulla mappa.&lt;/t&gt;
             &lt;br/&gt;&lt;br/&gt;
-            &lt;t size='1.15' color='#00a0ff'&gt;Cost: 10&lt;img image='\A3\Ui_f\data\GUI\Cfg\Ranks\general_gs.paa'/&gt;&lt;/t&gt;
+            &lt;t size='1.15' color='#00a0ff'&gt;Cost: 15&lt;img image='\A3\Ui_f\data\GUI\Cfg\Ranks\general_gs.paa'/&gt;&lt;/t&gt;
             &lt;br/&gt;
             &lt;t size='1.15' color='#ffa000'&gt;Ricompensa: livello di allerta OPFOR ridotto del 15%&lt;/t&gt;
             &lt;br/&gt;
@@ -3530,7 +3530,7 @@
             &lt;t size='1'&gt;
             你的任务是不惜一切代价拦截敌军车队。由你决定是摧毁还是截获所有的弹药。目标将会标示在你的地图上。&lt;/t&gt;
             &lt;br/&gt;&lt;br/&gt;
-            &lt;t size='1.15' color='#00a0ff'&gt;花费：10&lt;img image='\A3\Ui_f\data\GUI\Cfg\Ranks\general_gs.paa'/&gt;&lt;/t&gt;
+            &lt;t size='1.15' color='#00a0ff'&gt;花费：15&lt;img image='\A3\Ui_f\data\GUI\Cfg\Ranks\general_gs.paa'/&gt;&lt;/t&gt;
             &lt;br/&gt;
             &lt;t size='1.15' color='#ffa000'&gt;奖励：敌军警戒等级降低15%&lt;/t&gt;
             &lt;br/&gt;
@@ -3547,7 +3547,7 @@
             &lt;t size='1'&gt;
             你的任務是攔截車隊，你可以自行決定要摧毀或是掠奪車隊上的所有彈藥，情報單位將會協助標示目標位置與目標可能前往的路徑點在你的地圖上。&lt;/t&gt;
             &lt;br/&gt;&lt;br/&gt;
-            &lt;t size='1.15' color='#00a0ff'&gt;花費：10&lt;img image='\A3\Ui_f\data\GUI\Cfg\Ranks\general_gs.paa'/&gt;&lt;/t&gt;
+            &lt;t size='1.15' color='#00a0ff'&gt;花費：15&lt;img image='\A3\Ui_f\data\GUI\Cfg\Ranks\general_gs.paa'/&gt;&lt;/t&gt;
             &lt;br/&gt;
             &lt;t size='1.15' color='#ffa000'&gt;獎勵：敵軍警戒度降低 15 %&lt;/t&gt;
             &lt;br/&gt;
@@ -3564,7 +3564,7 @@
             &lt;t size='1'&gt;
             Göreviniz bu konvoyu ne pahasına olursa olsun durdurmak. Patlatmadığınız mühimmatı kendi bölgenize taşıyabilirsiniz. Konvoy haritada işaretlenecektir.&lt;/t&gt;
             &lt;br/&gt;&lt;br/&gt;
-            &lt;t size='1.15' color='#00a0ff'&gt;Maliyeti: 10&lt;img image='\A3\Ui_f\data\GUI\Cfg\Ranks\general_gs.paa'/&gt;&lt;/t&gt;
+            &lt;t size='1.15' color='#00a0ff'&gt;Maliyeti: 15&lt;img image='\A3\Ui_f\data\GUI\Cfg\Ranks\general_gs.paa'/&gt;&lt;/t&gt;
             &lt;br/&gt;
             &lt;t size='1.15' color='#ffa000'&gt;Ödül: OPFOR uyarı seviyesi %15 kadar düşecektir.&lt;/t&gt;
             &lt;br/&gt;
@@ -3581,7 +3581,7 @@
             &lt;t size='1'&gt;
             Sua missão é deter o comboio das forças de oposição utilizando qualquer meio possível. Você pode destruí-lo ou sequestrá-lo para recuperar toda a munição que conseguir transportar. O alvo será identificado em coordenadas específicas no seu mapa.&lt;/t&gt;
             &lt;br/&gt;&lt;br/&gt;
-            &lt;t size='1.15' color='#00a0ff'&gt;Cost: 10&lt;img image='\A3\Ui_f\data\GUI\Cfg\Ranks\general_gs.paa'/&gt;&lt;/t&gt;
+            &lt;t size='1.15' color='#00a0ff'&gt;Cost: 15&lt;img image='\A3\Ui_f\data\GUI\Cfg\Ranks\general_gs.paa'/&gt;&lt;/t&gt;
             &lt;br/&gt;
             &lt;t size='1.15' color='#ffa000'&gt;Recompensa: Nível de alerta das forças de oposição reduzido em 15%.&lt;/t&gt;
             &lt;br/&gt;
