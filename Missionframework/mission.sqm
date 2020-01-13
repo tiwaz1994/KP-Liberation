@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=7650;
+		nextID=7652;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=865;
+		nextID=889;
 	};
 	class Camera
 	{
-		pos[]={-212.8613,133.17152,2420.9502};
-		dir[]={0.015679825,-0.56662399,0.82382911};
-		up[]={0.010782536,0.8239761,0.56652212};
-		aside[]={0.99981999,2.910383e-011,-0.019029427};
+		pos[]={2299.814,670.54956,7085.5469};
+		dir[]={0.36621824,-0.50059283,-0.7844308};
+		up[]={0.21176942,0.86567867,-0.45360377};
+		aside[]={-0.90613633,-3.9569568e-007,-0.42303789};
 	};
 };
 binarizationWanted=0;
@@ -8238,7 +8238,7 @@ class CustomAttributes
 																"SCALAR"
 															};
 														};
-														value=1;
+														value=0.89999998;
 													};
 												};
 												class Item1
@@ -8283,7 +8283,7 @@ class CustomAttributes
 																"SCALAR"
 															};
 														};
-														value=1;
+														value=0.60000002;
 													};
 												};
 												class Item1
@@ -8328,7 +8328,7 @@ class CustomAttributes
 																"SCALAR"
 															};
 														};
-														value=1;
+														value=2;
 													};
 												};
 												class Item1
@@ -11331,7 +11331,7 @@ class CustomAttributes
 																"SCALAR"
 															};
 														};
-														value=1;
+														value=0;
 													};
 												};
 												class Item1
@@ -11376,7 +11376,7 @@ class CustomAttributes
 																"SCALAR"
 															};
 														};
-														value=2;
+														value=0;
 													};
 												};
 												class Item1
@@ -11421,7 +11421,7 @@ class CustomAttributes
 																"SCALAR"
 															};
 														};
-														value=0.050000001;
+														value=0.1;
 													};
 												};
 												class Item1
@@ -11691,7 +11691,7 @@ class CustomAttributes
 																"SCALAR"
 															};
 														};
-														value=1;
+														value=1.5;
 													};
 												};
 												class Item1
@@ -12816,7 +12816,7 @@ class CustomAttributes
 																"SCALAR"
 															};
 														};
-														value=0.40000001;
+														value=0.79991478;
 													};
 												};
 												class Item1
@@ -25074,8 +25074,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={1294.4635,330.93143,13354.082};
-				angles[]={0,2.5179682,0};
+				position[]={1294.464,330.93106,13354.082};
+				angles[]={0,2.5179689,0};
 			};
 			side="Empty";
 			class Attributes
@@ -25084,7 +25084,7 @@ class Mission
 			};
 			id=265;
 			type="GUE_WarfareBFieldhHospital";
-			atlOffset=0.27935791;
+			atlOffset=0.2789917;
 		};
 		class Item176
 		{
@@ -25104,7 +25104,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{for ""_i"" from 1 to 8 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_morphine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_epinephrine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_tourniquet"";}; this addItemToVest ""ACE_splint""; " \n "}";
+						init="call{for ""_i"" from 1 to 8 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_morphine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_epinephrine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_tourniquet"";};}";
 						description="Platoon Sergeant";
 						isPlayable=1;
 					};
@@ -25146,7 +25146,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{for ""_i"" from 1 to 8 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_morphine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_epinephrine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_tourniquet"";}; this addItemToVest ""ACE_splint""; " \n "}";
+						init="call{for ""_i"" from 1 to 8 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_morphine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_epinephrine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_tourniquet"";};}";
 						name="commandant";
 						description="Platoon Leader (Commander)";
 						isPlayer=1;
@@ -25228,7 +25228,7 @@ class Mission
 					{
 						skill=0.44999999;
 						rank="CORPORAL";
-						init="call{for ""_i"" from 1 to 8 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_morphine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_epinephrine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_tourniquet"";}; this addItemToVest ""ACE_splint""; " \n "}";
+						init="call{for ""_i"" from 1 to 8 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_morphine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_epinephrine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_tourniquet"";};}";
 						isPlayable=1;
 					};
 					id=280;
@@ -25270,7 +25270,7 @@ class Mission
 					{
 						skill=0.44999999;
 						rank="CORPORAL";
-						init="call{for ""_i"" from 1 to 8 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_morphine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_epinephrine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_tourniquet"";}; this addItemToVest ""ACE_splint""; " \n "}";
+						init="call{for ""_i"" from 1 to 8 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_morphine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_epinephrine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_tourniquet"";};}";
 						isPlayable=1;
 					};
 					id=281;
@@ -25312,7 +25312,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
-						init="call{for ""_i"" from 1 to 8 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_morphine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_epinephrine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_tourniquet"";}; this addItemToVest ""ACE_splint""; " \n "}";
+						init="call{for ""_i"" from 1 to 8 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_morphine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_epinephrine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_tourniquet"";};}";
 						isPlayable=1;
 					};
 					id=282;
@@ -25332,7 +25332,7 @@ class Mission
 					{
 						skill=0.44999999;
 						rank="CORPORAL";
-						init="call{for ""_i"" from 1 to 8 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_morphine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_epinephrine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_tourniquet"";}; this addItemToVest ""ACE_splint""; " \n "}";
+						init="call{for ""_i"" from 1 to 8 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_morphine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_epinephrine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_tourniquet"";};}";
 						isPlayable=1;
 					};
 					id=283;
@@ -25352,7 +25352,7 @@ class Mission
 					{
 						skill=0.44999999;
 						rank="CORPORAL";
-						init="call{for ""_i"" from 1 to 8 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_morphine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_epinephrine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_tourniquet"";}; this addItemToVest ""ACE_splint""; " \n "}";
+						init="call{for ""_i"" from 1 to 8 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_morphine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_epinephrine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_tourniquet"";};}";
 						isPlayable=1;
 					};
 					id=284;
@@ -25371,7 +25371,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
-						init="call{for ""_i"" from 1 to 8 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_morphine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_epinephrine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_tourniquet"";}; this addItemToVest ""ACE_splint""; " \n "}";
+						init="call{for ""_i"" from 1 to 8 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_morphine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_epinephrine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_tourniquet"";};}";
 						isPlayable=1;
 					};
 					id=285;
@@ -25389,7 +25389,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
-						init="call{for ""_i"" from 1 to 8 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_morphine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_epinephrine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_tourniquet"";}; this addItemToVest ""ACE_splint""; " \n "}";
+						init="call{for ""_i"" from 1 to 8 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_morphine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_epinephrine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_tourniquet"";};}";
 						isPlayable=1;
 					};
 					id=286;
@@ -25407,7 +25407,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
-						init="call{for ""_i"" from 1 to 8 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_morphine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_epinephrine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_tourniquet"";}; this addItemToVest ""ACE_splint""; " \n "}";
+						init="call{for ""_i"" from 1 to 8 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_morphine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_epinephrine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_tourniquet"";};}";
 						isPlayable=1;
 					};
 					id=287;
@@ -25424,7 +25424,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{for ""_i"" from 1 to 10 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_morphine"";}; " \n "for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_epinephrine"";}; " \n "this addItemToVest ""ACE_tourniquet""; " \n "this addItemToVest ""ACE_personalAidKit"";" \n "this addItemToVest ""ACE_splint"";" \n "this addItemToVest ""ACE_bloodIV_250"";}";
+						init="call{for ""_i"" from 1 to 10 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_morphine"";}; " \n "for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_epinephrine"";}; " \n "this addItemToVest ""ACE_tourniquet""; " \n "this addItemToVest ""ACE_personalAidKit"";" \n "this addItemToVest ""ACE_bloodIV_250"";}";
 						description="Medic";
 						isPlayable=1;
 					};
@@ -25517,7 +25517,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						init="call{for ""_i"" from 1 to 8 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_morphine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_epinephrine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_tourniquet"";}; this addItemToVest ""ACE_splint""; " \n "}";
+						init="call{for ""_i"" from 1 to 8 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_morphine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_epinephrine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_tourniquet"";};}";
 						isPlayable=1;
 					};
 					id=290;
@@ -25535,7 +25535,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
-						init="call{for ""_i"" from 1 to 8 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_morphine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_epinephrine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_tourniquet"";}; this addItemToVest ""ACE_splint""; " \n "}";
+						init="call{for ""_i"" from 1 to 8 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_morphine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_epinephrine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_tourniquet"";};}";
 						isPlayable=1;
 					};
 					id=291;
@@ -25554,7 +25554,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
-						init="call{for ""_i"" from 1 to 8 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_morphine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_epinephrine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_tourniquet"";}; this addItemToVest ""ACE_splint""; " \n "}";
+						init="call{for ""_i"" from 1 to 8 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_morphine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_epinephrine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_tourniquet"";};}";
 						isPlayable=1;
 					};
 					id=292;
@@ -25573,7 +25573,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
-						init="call{for ""_i"" from 1 to 8 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_morphine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_epinephrine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_tourniquet"";}; this addItemToVest ""ACE_splint""; " \n "}";
+						init="call{for ""_i"" from 1 to 8 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_morphine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_epinephrine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_tourniquet"";};}";
 						isPlayable=1;
 					};
 					id=293;
@@ -25592,7 +25592,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
-						init="call{for ""_i"" from 1 to 8 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_morphine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_epinephrine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_tourniquet"";}; this addItemToVest ""ACE_splint""; " \n "}";
+						init="call{for ""_i"" from 1 to 8 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_morphine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_epinephrine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_tourniquet"";};}";
 						isPlayable=1;
 					};
 					id=295;
@@ -25633,7 +25633,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{for ""_i"" from 1 to 10 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_morphine"";}; " \n "for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_epinephrine"";}; " \n "this addItemToVest ""ACE_tourniquet""; " \n "this addItemToVest ""ACE_personalAidKit"";" \n "this addItemToVest ""ACE_splint"";" \n "this addItemToVest ""ACE_bloodIV_250"";}";
+						init="call{for ""_i"" from 1 to 10 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_morphine"";}; " \n "for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_epinephrine"";}; " \n "this addItemToVest ""ACE_tourniquet""; " \n "this addItemToVest ""ACE_personalAidKit"";" \n "this addItemToVest ""ACE_bloodIV_250"";}";
 						description="Medic";
 						isPlayable=1;
 					};
@@ -25750,7 +25750,7 @@ class Mission
 					{
 						skill=0.55000001;
 						rank="LIEUTENANT";
-						init="call{for ""_i"" from 1 to 8 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_morphine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_epinephrine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_tourniquet"";}; this addItemToVest ""ACE_splint""; " \n "}";
+						init="call{for ""_i"" from 1 to 8 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_morphine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_epinephrine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_tourniquet"";};}";
 						isPlayable=1;
 					};
 					id=297;
@@ -25792,7 +25792,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						init="call{for ""_i"" from 1 to 8 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_morphine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_epinephrine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_tourniquet"";}; this addItemToVest ""ACE_splint""; " \n "}";
+						init="call{for ""_i"" from 1 to 8 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_morphine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_epinephrine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_tourniquet"";};}";
 						isPlayable=1;
 					};
 					id=298;
@@ -25835,7 +25835,7 @@ class Mission
 					{
 						skill=0.44999999;
 						rank="CORPORAL";
-						init="call{for ""_i"" from 1 to 8 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_morphine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_epinephrine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_tourniquet"";}; this addItemToVest ""ACE_splint""; " \n "}";
+						init="call{for ""_i"" from 1 to 8 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_morphine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_epinephrine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_tourniquet"";};}";
 						isPlayable=1;
 					};
 					id=299;
@@ -25877,7 +25877,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
-						init="call{for ""_i"" from 1 to 8 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_morphine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_epinephrine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_tourniquet"";}; this addItemToVest ""ACE_splint""; " \n "}";
+						init="call{for ""_i"" from 1 to 8 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_morphine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_epinephrine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_tourniquet"";};}";
 						isPlayable=1;
 					};
 					id=301;
@@ -25919,7 +25919,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
-						init="call{for ""_i"" from 1 to 8 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_morphine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_epinephrine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_tourniquet"";}; this addItemToVest ""ACE_splint""; " \n "}";
+						init="call{for ""_i"" from 1 to 8 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_morphine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_epinephrine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_tourniquet"";};}";
 						isPlayable=1;
 					};
 					id=302;
@@ -25979,7 +25979,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
-						init="call{for ""_i"" from 1 to 8 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_morphine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_epinephrine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_tourniquet"";}; this addItemToVest ""ACE_splint""; " \n "}";
+						init="call{for ""_i"" from 1 to 8 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_morphine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_epinephrine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_tourniquet"";};}";
 						isPlayable=1;
 					};
 					id=303;
@@ -26019,7 +26019,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{for ""_i"" from 1 to 10 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_morphine"";}; " \n "for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_epinephrine"";}; " \n "this addItemToVest ""ACE_tourniquet""; " \n "this addItemToVest ""ACE_personalAidKit"";" \n "this addItemToVest ""ACE_splint"";" \n "this addItemToVest ""ACE_bloodIV_250"";}";
+						init="call{for ""_i"" from 1 to 10 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_morphine"";}; " \n "for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_epinephrine"";}; " \n "this addItemToVest ""ACE_tourniquet""; " \n "this addItemToVest ""ACE_personalAidKit"";" \n "this addItemToVest ""ACE_bloodIV_250"";}";
 						description="Medic";
 						isPlayable=1;
 					};
@@ -26133,7 +26133,7 @@ class Mission
 					{
 						skill=0.44999999;
 						rank="CORPORAL";
-						init="call{for ""_i"" from 1 to 8 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_morphine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_epinephrine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_tourniquet"";}; this addItemToVest ""ACE_splint""; " \n "}";
+						init="call{for ""_i"" from 1 to 8 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_morphine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_epinephrine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_tourniquet"";};}";
 						isPlayable=1;
 					};
 					id=305;
@@ -26175,7 +26175,7 @@ class Mission
 					{
 						skill=0.44999999;
 						rank="CORPORAL";
-						init="call{for ""_i"" from 1 to 8 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_morphine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_epinephrine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_tourniquet"";}; this addItemToVest ""ACE_splint""; " \n "}";
+						init="call{for ""_i"" from 1 to 8 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_morphine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_epinephrine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_tourniquet"";};}";
 						isPlayable=1;
 					};
 					id=306;
@@ -26217,7 +26217,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
-						init="call{for ""_i"" from 1 to 8 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_morphine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_epinephrine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_tourniquet"";}; this addItemToVest ""ACE_splint""; " \n "}";
+						init="call{for ""_i"" from 1 to 8 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_morphine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_epinephrine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_tourniquet"";};}";
 						isPlayable=1;
 					};
 					id=307;
@@ -26277,7 +26277,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
-						init="call{for ""_i"" from 1 to 8 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_morphine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_epinephrine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_tourniquet"";}; this addItemToVest ""ACE_splint""; " \n "}";
+						init="call{for ""_i"" from 1 to 8 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_morphine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_epinephrine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_tourniquet"";};}";
 						isPlayable=1;
 					};
 					id=308;
@@ -26318,7 +26318,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
-						init="call{for ""_i"" from 1 to 8 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_morphine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_epinephrine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_tourniquet"";}; this addItemToVest ""ACE_splint""; " \n "}";
+						init="call{for ""_i"" from 1 to 8 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_morphine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_epinephrine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_tourniquet"";};}";
 						isPlayable=1;
 					};
 					id=310;
@@ -26360,7 +26360,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
-						init="call{for ""_i"" from 1 to 8 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_morphine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_epinephrine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_tourniquet"";}; this addItemToVest ""ACE_splint""; " \n "}";
+						init="call{for ""_i"" from 1 to 8 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_morphine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_epinephrine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_tourniquet"";};}";
 						isPlayable=1;
 					};
 					id=311;
@@ -26402,7 +26402,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
-						init="call{for ""_i"" from 1 to 8 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_morphine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_epinephrine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_tourniquet"";}; this addItemToVest ""ACE_splint""; " \n "}";
+						init="call{for ""_i"" from 1 to 8 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_morphine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_epinephrine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_tourniquet"";};}";
 						isPlayable=1;
 					};
 					id=312;
@@ -26444,11 +26444,12 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
-						init="call{for ""_i"" from 1 to 8 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_morphine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_epinephrine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_tourniquet"";}; this addItemToVest ""ACE_splint""; " \n "}";
+						init="call{for ""_i"" from 1 to 8 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_morphine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_epinephrine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_tourniquet"";};}";
 						isPlayable=1;
 					};
 					id=313;
 					type="I_NORTH_FIN_S_Pioneer";
+					atlOffset=-7.6293945e-006;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -26503,7 +26504,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{for ""_i"" from 1 to 10 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_morphine"";}; " \n "for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_epinephrine"";}; " \n "this addItemToVest ""ACE_tourniquet""; " \n "this addItemToVest ""ACE_personalAidKit"";" \n "this addItemToVest ""ACE_splint"";" \n "this addItemToVest ""ACE_bloodIV_250"";}";
+						init="call{for ""_i"" from 1 to 10 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_morphine"";}; " \n "for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_epinephrine"";}; " \n "this addItemToVest ""ACE_tourniquet""; " \n "this addItemToVest ""ACE_personalAidKit"";" \n "this addItemToVest ""ACE_bloodIV_250"";}";
 						description="Medic";
 						isPlayable=1;
 					};
@@ -26598,7 +26599,7 @@ class Mission
 					{
 						skill=0.44999999;
 						rank="CORPORAL";
-						init="call{for ""_i"" from 1 to 8 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_morphine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_epinephrine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_tourniquet"";}; this addItemToVest ""ACE_splint""; " \n "}";
+						init="call{for ""_i"" from 1 to 8 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_morphine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_epinephrine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_tourniquet"";};}";
 						isPlayable=1;
 					};
 					id=315;
@@ -26641,7 +26642,7 @@ class Mission
 					{
 						skill=0.44999999;
 						rank="CORPORAL";
-						init="call{for ""_i"" from 1 to 8 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_morphine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_epinephrine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_tourniquet"";}; this addItemToVest ""ACE_splint""; " \n "}";
+						init="call{for ""_i"" from 1 to 8 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_morphine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_epinephrine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_tourniquet"";};}";
 						isPlayable=1;
 					};
 					id=316;
@@ -26660,7 +26661,7 @@ class Mission
 					{
 						skill=0.44999999;
 						rank="CORPORAL";
-						init="call{for ""_i"" from 1 to 8 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_morphine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_epinephrine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_tourniquet"";}; this addItemToVest ""ACE_splint""; " \n "}";
+						init="call{for ""_i"" from 1 to 8 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_morphine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_epinephrine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_tourniquet"";};}";
 						isPlayable=1;
 					};
 					id=318;
@@ -26679,7 +26680,7 @@ class Mission
 					{
 						skill=0.44999999;
 						rank="CORPORAL";
-						init="call{for ""_i"" from 1 to 8 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_morphine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_epinephrine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_tourniquet"";}; this addItemToVest ""ACE_splint""; " \n "}";
+						init="call{for ""_i"" from 1 to 8 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_morphine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_epinephrine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_tourniquet"";};}";
 						isPlayable=1;
 					};
 					id=319;
@@ -26720,7 +26721,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
-						init="call{for ""_i"" from 1 to 8 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_morphine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_epinephrine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_tourniquet"";}; this addItemToVest ""ACE_splint""; " \n "}";
+						init="call{for ""_i"" from 1 to 8 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_morphine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_epinephrine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_tourniquet"";};}";
 						isPlayable=1;
 					};
 					id=320;
@@ -26739,7 +26740,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
-						init="call{for ""_i"" from 1 to 8 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_morphine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_epinephrine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_tourniquet"";}; this addItemToVest ""ACE_splint""; " \n "}";
+						init="call{for ""_i"" from 1 to 8 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_morphine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_epinephrine"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""ACE_tourniquet"";};}";
 						isPlayable=1;
 						class Inventory
 						{
@@ -26846,7 +26847,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{for ""_i"" from 1 to 10 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_morphine"";}; " \n "for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_epinephrine"";}; " \n "this addItemToVest ""ACE_tourniquet""; " \n "this addItemToVest ""ACE_personalAidKit"";" \n "this addItemToVest ""ACE_splint"";" \n "this addItemToVest ""ACE_bloodIV_250"";}";
+						init="call{for ""_i"" from 1 to 10 do {this addItemToVest ""ACE_fieldDressing"";}; " \n "for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_morphine"";}; " \n "for ""_i"" from 1 to 6 do {this addItemToVest ""ACE_epinephrine"";}; " \n "this addItemToVest ""ACE_tourniquet""; " \n "this addItemToVest ""ACE_personalAidKit"";" \n "this addItemToVest ""ACE_bloodIV_250"";}";
 						description="Medic";
 						isPlayable=1;
 					};
