@@ -94,39 +94,51 @@ militia_vehicles = [
 // All enemy vehicles that can spawn as sector defenders and patrols at high enemy combat readiness (aggression levels).
 opfor_vehicles = [
     "LIB_sov_M3_Scout_IFL",
-    "GLIB_SOV_M3_Halftrack",
     "LIB_sov_T3476_Kaki",
     "LIB_sov_T3485_Kaki",
 	"LIB_SOV_JS2_Kaki",
-	"LIB_Zis5v_61K"
+	"LIB_Zis5v_61K",
+	//Stationary weapons
+	"LIB_Zis3",
+	"LIB_Maxim_M30_base",
+	"LIB_61k"
 ];
 
 // All enemy vehicles that can spawn as sector defenders and patrols but at a lower enemy combat readiness (aggression levels).
 opfor_vehicles_low_intensity = [
     "LIB_sov_M3_Scout_IFL",
 	"LIB_Zis5v_61K",
-	"LIB_Zis5v_61K",
-    "GLIB_SOV_M3_Halftrack"
+    "GLIB_SOV_M3_Halftrack",
+	//Stationary weapons
+	"LIB_61k",
+	"LIB_Maxim_M30_base",
+	"LIB_Maxim_M30_base"
 ];
 
 // All enemy vehicles that can spawn as battlegroups, either assaulting or as reinforcements, at high enemy combat readiness (aggression levels).
 opfor_battlegroup_vehicles = [
-    "GLIB_SOV_M3_Halftrack",
-    "LIB_sov_T3485_Kaki",
+	//Armour
+	"LIB_sov_T3485_Kaki",
     "LIB_sov_T3476_Kaki",
     "LIB_SOV_JS2_Kaki",
+	//Armed vehicles infantry transport
+    "GLIB_SOV_M3_Halftrack",
 	"GLIB_SOV_M3_Halftrack",
-	"GLIB_SOV_M3_Halftrack",
-	"LIB_Zis5v_61K",
+	//unarmed Infantry transport
+	"LIB_SOV_ZiS5V_RKKA",
 	"LIB_SOV_ZiS5V_RKKA"
 ];
 
 // All enemy vehicles that can spawn as battlegroups, either assaulting or as reinforcements, at lower enemy combat readiness (aggression levels).
 opfor_battlegroup_vehicles_low_intensity = [
-    "LIB_sov_M3_Scout_IFL",
-    "GLIB_SOV_M3_Halftrack",
-	"LIB_Zis5v_61K",
+	//Armour
 	"LIB_sov_T3476_Kaki",
+	//Armed vehicles
+	"LIB_Zis5v_61K",
+	"LIB_sov_M3_Scout_IFL",
+	//Armed vehicles infantry transport
+    "GLIB_SOV_M3_Halftrack",
+	//unarmed Infantry transport
 	"LIB_SOV_ZiS5V_RKKA",
 	"LIB_US6_Tent",
 	"LIB_US6_Open"
