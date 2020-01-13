@@ -51,7 +51,7 @@ player createDiaryRecord ["Information", ["ACE Medical",
 	"
 	ACE medical mission setup is very close to what basic used to be.</br>
 	<br/>
-	Fractures are enabled, use splint to treat them in the field. However to be able to sprint again you need a Personal Aid Kit (can only be used by medics or near medic vehicle/building).<br/>
+	Fractures are disabled.<br/>
 	<br/>
 	You can use Personal Aid Kit as a non medic if close to medical vehicle or building.<br/>
 	<br/>
