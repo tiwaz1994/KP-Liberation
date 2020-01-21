@@ -1,7 +1,7 @@
 private _convoy_destinations_markers = [];
 private _load_box_fnc = compileFinal preprocessFileLineNumbers "scripts\client\ammoboxes\do_load_box.sqf";
 
-while { count _convoy_destinations_markers < 3 } do { _convoy_destinations_markers pushback ([2000,6000,false] call F_findOpforSpawnPoint); };
+while { count _convoy_destinations_markers < 3 } do { _convoy_destinations_markers pushback ([2000,4000,false] call F_findOpforSpawnPoint); };
 
 private _couldnt_spawn = false;
 { if ( _x == "" ) exitWith { _couldnt_spawn = true; }; } foreach _convoy_destinations_markers;

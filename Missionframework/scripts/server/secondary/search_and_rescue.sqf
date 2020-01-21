@@ -1,5 +1,5 @@
 
-private _spawn_marker = [ 2000, 8000, false ] call F_findOpforSpawnPoint;
+private _spawn_marker = [ 2000, 5000, false ] call F_findOpforSpawnPoint;
 if ( _spawn_marker == "" ) exitWith { diag_log "[KP LIBERATION] [ERROR] Could not find position for search and rescue mission"; };
 used_positions pushbackUnique _spawn_marker;
 

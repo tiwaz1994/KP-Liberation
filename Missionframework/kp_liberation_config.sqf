@@ -51,7 +51,8 @@ KP_liberation_medical_vehicles = [
 	"LIB_GER_Kubel_Medical",
 	"LIB_GER_M3_Halftrack_medical",
 	"LIB_DAK_OpelBlitz_Ambulance",
-	"LIB_OpelBlitz_Ambulance_w"
+	"LIB_OpelBlitz_Ambulance_w",
+    "LIB_Willys_MB_Ambulance"
 ];
 
 // Building classnames which also function as ACE medical facilities.
@@ -667,7 +668,8 @@ box_transport_config = [
     ["uns_nvatruck", -5, [0,-1.05,0.8], [0,-2.75,0.8]],
 	//WW2 Edit
 	["LIB_OpelBlitz_Open_Y_Camo", -6.5, [0,0,0.659], [0,-0.9,0.68], [0,-1.95,0.68]],    
-	["LIB_OpelBlitz_Tent_Y_Camo", -6.5, [0,-0.2,0.659], [0,-0.9,0.68], [0,-1.95,0.68]],    
+	["LIB_OpelBlitz_Tent_Y_Camo", -6.5, [0,-0.2,0.659], [0,-0.9,0.68], [0,-1.95,0.68]],
+    ["LIB_ger_opelblitz_medical", -6.5, [0,-0.2,0.659], [0,-0.9,0.68], [0,-1.95,0.68]],
 	["LIB_opelblitz_tentB_Winter", -6.5, [0,-0.2,0.659], [0,-0.9,0.68], [0,-1.95,0.68]],    
 	["LIB_opelblitz_open_Winter", -6.5, [0,0,0.659], [0,-0.9,0.68], [0,-1.95,0.68]],    
 	["LIB_opelblitz_tentG_Winter", -6.5, [0,-0.2,0.659], [0,-0.9,0.68], [0,-1.95,0.68]],    

@@ -70,3 +70,4 @@ F_addObjectInit = compileFinal preprocessFileLineNumbers "scripts\shared\functio
 F_allowCrewInImmobile = compileFinal preprocessFileLineNumbers "scripts\shared\functions\F_kp_allowCrewInImmobile.sqf";
 F_isRadio = compileFinal preprocessFileLineNumbers "scripts\shared\functions\F_kp_isRadio.sqf";
 F_createClearance = compileFinal preprocessFileLineNumbers "scripts\shared\functions\F_kp_createClearance.sqf";
+F_TW_supplyContainerCargo = compileFinal preprocessFileLineNumbers "scripts\shared\functions\F_TW_supplyContainerCargo.sqf";

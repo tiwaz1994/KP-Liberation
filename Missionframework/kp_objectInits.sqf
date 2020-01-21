@@ -18,7 +18,7 @@ KPLIB_objectInits = [
     // Add ACE variables to corresponding building types
     [[KP_liberation_recycle_building], {_this setVariable ["ace_isRepairFacility", 1, true];}],
     [KP_liberation_medical_facilities, {_this setVariable ["ace_medical_isMedicalFacility", true, true];}],
-    [KP_liberation_medical_vehicles, {_this setVariable ["ace_medical_medicClass", 1, true];}],
+    [KP_liberation_medical_vehicles, {_this setVariable ["ACE_medical_isMedicalFacility", true];}],
 
     // Hide Cover on big GM trucks
     [["gm_ge_army_kat1_454_cargo", "gm_ge_army_kat1_454_cargo_win"], {_this animateSource ["cover_unhide", 0, true];}],
@@ -29,5 +29,8 @@ KPLIB_objectInits = [
     [["Land_Workbench_01_F"], {_this setVariable ["ace_isRepairFacility", 1, true];}],
 
     //change skins
-    [["LIB_FIN_StuG_III_G_Ps531"], {[_this,["Ps53110",1],true] call BIS_fnc_initVehicle;}]
+    [["LIB_FIN_StuG_III_G_Ps531"], {[_this,["Ps53110",1],true] call BIS_fnc_initVehicle;}],
+
+    //add Cargo
+    [[KP_liberation_storage_container], {_this call F_TW_supplyContainerCargo}]
 ];

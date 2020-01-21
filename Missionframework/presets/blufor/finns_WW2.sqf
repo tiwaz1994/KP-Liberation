@@ -1,14 +1,6 @@
 /*
     Needed Mods:
-    - None
-
-    Optional Mods:
-    - BWMod
-    - RHSUSAF
-    - F-15C
-    - F/A-18
-    - CUP Weapons
-    - CUP Vehicles
+    - IFA3,GEIST,Secret Weapons,Secret Weapons - Liveries,Northern Fronts 
 */
 
 /*
@@ -21,7 +13,7 @@ FOB_typename = "LIB_Static_OpelBlitz_Radio";                            // This 
 FOB_box_typename = "CUP_hromada_beden_dekorativniX";                    // This is the FOB as a container.
 FOB_truck_typename = "Lib_ger_SdKfz7_Tarn53";                           // This is the FOB as a vehicle.
 Arsenal_typename = "AmmoCrates_NoInteractive_Large";                    // This is the virtual arsenal as portable supply crates.
-Respawn_truck_typename = "LIB_opelblitz_tentB_Tarn";                    // This is the mobile respawn (and medical) truck.
+Respawn_truck_typename = "LIB_ger_opelblitz_medical";                    // This is the mobile respawn (and medical) truck.
 huron_typename = "LIB_opelblitz_tentB_Tarn";                            // This is Spartan 01, a multipurpose mobile respawn as a helicopter.
 crewman_classname = "I_NORTH_FIN_AD_T_S_Crewman_1CL";                   // This defines the crew for vehicles.
 pilot_classname = "LIB_FIN_NCOFAF_g1vbfafpKersGP35";                    // This defines the pilot for helicopters.
@@ -37,6 +29,7 @@ KP_liberation_plane_slot_building = "Land_TentHangar_V1_F";             // The h
 KP_liberation_supply_crate = "CargoNet_01_box_F";                       // This defines the supply crates, as in resources.
 KP_liberation_ammo_crate = "B_CargoNet_01_ammo_F";                      // This defines the ammunition crates.
 KP_liberation_fuel_crate = "CargoNet_01_barrels_F";                     // This defines the fuel crates.
+KP_liberation_storage_container = "NORTH_Supplytorpedo";                //storage container with some ammo and supplies that can be airdropped
 
 /*
     --- Friendly classnames ---
@@ -47,95 +40,94 @@ KP_liberation_fuel_crate = "CargoNet_01_barrels_F";                     // This 
     IMPORTANT: The last element inside each array must have no comma at the end!
 */
 infantry_units = [
-    ["I_NORTH_FIN_S_Rifleman",15,0,0],                                  // Rifleman (Light)
-	["I_NORTH_FIN_S_Rifleman_1CL",15,0,0],                              // Rifleman (Light)
-	["I_NORTH_FIN_S_Rifleman_CPL",15,0,0],                              // Rifleman (Light)
-    ["I_NORTH_FIN_S_Rifleman_SGT",15,0,0],                              // Rifleman
-    ["I_NORTH_FIN_S_Rifleman_AT_F1",20,0,0],                            // Rifleman (AT)
-    ["I_NORTH_FIN_S_Rifleman_AT",25,0,0],                               // Grenadier
-    ["I_NORTH_FIN_S_Machinegunner",25,0,0],                             // Autorifleman
-	["I_NORTH_FIN_S_Machinegunner_Asst",18,0,0],                        // Rifleman (Light)
-    ["I_NORTH_FIN_S_Machinegunner_DP",20,0,0],                          // Heavygunner
-	["I_NORTH_FIN_S_Machinegunner_Asst_DP",18,0,0],                     // Rifleman (Light)
-    ["I_NORTH_FIN_Rifleman_AT_F2",30,10,0],                             // AT Specialist
-    ["LIB_FIN_Medic_g2vbg2pSotaM39",25,0,0],                            // Combat Life Saver
-    ["I_NORTH_FIN_Pioneer",30,0,0],                                     // Engineer
-	["I_NORTH_FIN_Pioneer_demo",35,0,0],                                // Engineer
-	["I_NORTH_FIN_Pioneer_demo_improvised",33,0,0],                     // Engineer
-	["I_NORTH_FIN_Pioneer_CPL",30,0,0],                                 // Engineer
-	["I_NORTH_FIN_Submachinegunner",20,0,0],                            // Rifleman (Light)
-	["I_NORTH_FIN_Submachinegunner_1CL",20,0,0],                        // Rifleman (Light)
-	["I_NORTH_FIN_Submachinegunner_CPL",20,0,0],                        // Rifleman (Light)
-    ["I_NORTH_FIN_Submachinegunner_SGT",20,0,0],                        // Rifleman
-    ["I_NORTH_FIN_ART_Rifleman",15,0,0],                                 // Crewman
-	["I_NORTH_FIN_ART_Rifleman_1CL",15,0,0],                            // Crewman
-	["I_NORTH_FIN_ART_Rifleman_CPL",15,0,0],                            // Crewman
-	["I_NORTH_FIN_ART_Rifleman_SGT",15,0,0],                            // Crewman
-	["I_NORTH_FIN_ART_Officer_2ndLt",20,0,0],                           // Crewman
-	["I_NORTH_FIN_ART_Officer_1stLt",25,0,0],                           // Crewman
-	["I_NORTH_FIN_ART_Officer_Cpt",30,0,0],                             // Crewman
-	["I_NORTH_FIN_T_Crewman",10,0,0],                                   // Crewman
-	["I_NORTH_FIN_T_Crewman_1CL",20,0,0],                               // Crewman
-	["I_NORTH_FIN_T_Crewman_CPL",10,0,0],                               // Crewman
-	["I_NORTH_FIN_T_Crewman_SGT",20,0,0],                               // Crewman	
-	["I_NORTH_FIN_T_Crewman_2ndLt",25,0,0],                             // Crewman	
-	["I_NORTH_FIN_T_Crewman_1stLt",25,0,0],                             // Crewman	
-	["I_NORTH_FIN_T_Crewman_Cpt",30,0,0],                               // Crewman	
-    ["LIB_FIN_NCOFAF_bg1vbfafpYlikGP35",10,0,0]                         // Pilot
+    ["I_NORTH_FIN_S_Rifleman",10,3,0],
+	["I_NORTH_FIN_S_Rifleman_1CL",10,3,0],
+	["I_NORTH_FIN_S_Rifleman_CPL",10,3,0],
+    ["I_NORTH_FIN_S_Rifleman_SGT",10,3,0],
+    ["I_NORTH_FIN_S_Rifleman_AT_F1",12,8,0],
+    ["I_NORTH_FIN_S_Rifleman_AT",13,12,0],
+    ["I_NORTH_FIN_S_Machinegunner",12,5,0],
+	["I_NORTH_FIN_S_Machinegunner_Asst",10,5,0],
+    ["I_NORTH_FIN_S_Machinegunner_DP",15,10,0],
+	["I_NORTH_FIN_S_Machinegunner_Asst_DP",10,5,0],
+    ["I_NORTH_FIN_Rifleman_AT_F2",17,20,0],
+    ["LIB_FIN_Medic_g2vbg2pSotaM39",20,2,0],
+    ["I_NORTH_FIN_Pioneer",15,15,0],
+	["I_NORTH_FIN_Pioneer_demo",15,15,0],
+	["I_NORTH_FIN_Pioneer_demo_improvised",15,10,0],
+	["I_NORTH_FIN_Pioneer_CPL",15,15,0],
+	["I_NORTH_FIN_Submachinegunner",10,5,0],
+	["I_NORTH_FIN_Submachinegunner_1CL",10,5,0],
+	["I_NORTH_FIN_Submachinegunner_CPL",10,5,0],
+    ["I_NORTH_FIN_Submachinegunner_SGT",10,5,0],
+    ["I_NORTH_FIN_ART_Rifleman",10,3,0],
+	["I_NORTH_FIN_ART_Rifleman_1CL",10,3,0],
+	["I_NORTH_FIN_ART_Rifleman_CPL",12,3,0],
+	["I_NORTH_FIN_ART_Rifleman_SGT",12,3,0],
+	["I_NORTH_FIN_ART_Officer_2ndLt",13,5,0],
+	["I_NORTH_FIN_ART_Officer_1stLt",15,5,0],
+	["I_NORTH_FIN_ART_Officer_Cpt",15,8,0],
+	["I_NORTH_FIN_T_Crewman",5,1,0],
+	["I_NORTH_FIN_T_Crewman_1CL",10,1,0],
+	["I_NORTH_FIN_T_Crewman_CPL",5,1,0],
+	["I_NORTH_FIN_T_Crewman_SGT",10,1,0],
+	["I_NORTH_FIN_T_Crewman_2ndLt",13,2,0],
+	["I_NORTH_FIN_T_Crewman_1stLt",13,2,0],
+	["I_NORTH_FIN_T_Crewman_Cpt",15,4,0],
+    ["LIB_FIN_NCOFAF_bg1vbfafpYlikGP35",5,0,0]
 ];
 
 light_vehicles = [
-    ["LIB_GazM1_SOV_camo_sand",0,0,0],                                // Quad Bike
-	["LIB_GazM1_SOV",0,0,0],                               			// Quad Bike
-	["LIB_opelblitz_open_Tarn",40,0,30],                               	// Quad Bike
-    ["LIB_SdKfz251",80,40,50],                                         // Hunter (HMG)
-    ["LIB_SdKfz251_FFV",80,45,50],                                     // Hunter (GMG)
-    ["LIB_SOV_M3_Halftrack",75,55,55],                                 // M1025A2 (Mk19)
-	["LIB_US6_BM13",225,150,50],
-    ["B_Boat_Transport_01_F",10,0,10],                                 // Assault Boat
-    ["LIB_LCA",100,40,35],                            					// Speedboat Minigun
-	["LIB_Scout_M3FF",65,55,55],
-	["LIB_Willys_MB",20,0,25],     
-	["LIB_Willys_MB_Hood",20,0,25], 
-	["LIB_Willys_MB_Ambulance",25,0,25], 
-	["LIB_Zis5v",30,0,30],
-	["LIB_Zis5v_61K_DLV",30,25,30]
+    ["LIB_GazM1_SOV_camo_sand",0,0,0],
+	["LIB_GazM1_SOV",0,0,0],
+	["LIB_opelblitz_open_Tarn",30,0,25],
+    ["LIB_SdKfz251",55,40,50],
+    ["LIB_SdKfz251_FFV",55,45,60],
+    ["LIB_SOV_M3_Halftrack",60,100,60],
+	["LIB_US6_BM13",30,800,50],
+    ["B_Boat_Transport_01_F",10,0,10],
+    ["LIB_LCA",50,50,35],
+	["LIB_Scout_M3FF",45,100,48],
+	["LIB_Willys_MB",20,0,75],
+	["LIB_Willys_MB_Hood",20,0,75],
+	["LIB_Zis5v",30,0,25],
+	["LIB_Zis5v_61K_DLV",30,50,25]
 ];
 
 heavy_vehicles = [
-    ["LIB_FIN_StuG_III_G_Ps531",300,250,175],                           // AWC 302 Nyx (AA)
-    ["LIB_FIN_T3476_Camo",375,275,200],                                 // M2A1 Slammer
-	["LIB_FIN_T3476_Kaki",375,275,200],                                 // M2A1 Slammer
-    ["LIB_FIN_PzKpfwIV_J_Camo",400,300,200],                            // FV4034 Challenger 2
-	["LIB_FIN_PzKpfwIV_J_Kaki",400,300,200],                            // FV4034 Challenger 2
-	["LIB_GER_SU85_Kaki",350,250,200],
-	["LIB_JS2_43",425,350,225]
+    ["LIB_FIN_StuG_III_G_Ps531",155,250,162],
+    ["LIB_FIN_T3476_Camo",202,277,196],
+	["LIB_FIN_T3476_Kaki",202,277,196],
+    ["LIB_FIN_PzKpfwIV_J_Camo",200,279,200],
+	["LIB_FIN_PzKpfwIV_J_Kaki",219,298,214],
+	["LIB_GER_SU85_Kaki",273,311,276],
+	["LIB_JS2_43",304,351,316]
 ];
 
 air_vehicles = [
-    ["sab_gladiator_fin",200,150,125],                                  // CH-53E Super Stallion
-    ["sab_i16_fin",300,200,175],                               			// CH-67 Huron (Armed)
-    ["sab_la5_fin",450,350,250],                                        // MQ-12 Falcon
-    ["sab_bf109_fin",500,400,250],                                      // A-143 Buzzard
-	["sab_il2_fin",700,500,400],
-    ["LIB_FIN_Pe2_Camo",600,400,300],                                   // A-164 Wipeout (CAS)
-	["LIB_Ju52",600,0,500]
+    ["sab_gladiator_fin",100,80,200],
+    ["sab_i16_fin",100,100,200],
+    ["sab_la5_fin",150,185,275],
+    ["sab_bf109_fin",175,235,325],
+	["sab_il2_fin",250,315,375],
+    ["LIB_FIN_Pe2_Camo",325,387,500],
+	["LIB_Ju52",300,0,500]
 ];
 
 static_vehicles = [
-    ["NORTH_Maxim",5,2,0],                                           // Mk30A HMG .50
-	["LIB_SU_SearchLight",2,0,0],                                       // Mk30A HMG .50
-    ["NORTH_Lahti_L39",25,30,0],                                        // Mk32A GMG 20mm
-    ["NORTH_76k02",40,80,0],                                      // Static Titan Launcher (AT)
-    ["LIB_Pak40",70,120,0],                                             // Static Titan Launcher (AA)
-	["LIB_Zis3",55,100,0],
-	["LIB_BM37",70,140,0],
-    ["LIB_GrWr34_g",80,150,0],                                          // Mk6 Mortar
-    ["LIB_61k",30,25,0],                                               // MIM-145 Defender
-	["LIB_Nebelwerfer41_Camo",200,100,0],                                // MIM-145 Defender
-	["LIB_Maxim_M30_base",5,2,0], 
-	["LIB_leFH18",110,100,0],
-	["NORTH_76k02_tricolor",40,80,0]
+    ["NORTH_Maxim",1,2,0],
+	["LIB_SU_SearchLight",0,0,0],
+    ["NORTH_Lahti_L39",15,15,0],
+    ["NORTH_76k02",20,40,0],
+    ["LIB_Pak40",50,120,0],
+	["LIB_Zis3",45,100,0],
+	["LIB_BM37",65,185,0],
+    ["LIB_GrWr34_g",75,200,0],
+    ["LIB_61k",15,40,0],
+	["LIB_Nebelwerfer41_Camo",100,300,0],
+	["LIB_Maxim_M30_base",1,2,0], 
+	["LIB_leFH18",125,500,0],
+	["NORTH_76k02_tricolor",25,40,0]
 ];
 
 buildings = [
@@ -144,7 +136,7 @@ buildings = [
     ["geist_Flag_FINGuerre_F",0,0,0],
     ["Flag_White_F",0,0,0],
     ["geist_Flag_CR_F",0,0,0],
-    ["Land_LampShabby_F",5,0,0],
+    ["Land_LampShabby_F",0,0,0],
     ["CamoNet_BLUFOR_F",0,0,0],
     ["CamoNet_BLUFOR_open_F",0,0,0],
     ["CamoNet_BLUFOR_big_F",0,0,0],
@@ -203,30 +195,30 @@ buildings = [
 ];
 
 support_vehicles = [
-    [Arsenal_typename,100,200,0],
-    [Respawn_truck_typename,200,0,100],
-    [FOB_box_typename,400,500,0],
-    [FOB_truck_typename,300,300,300],
+    [Arsenal_typename,0,200,0],
+    [Respawn_truck_typename,275,0,75],
+    [FOB_box_typename,300,500,0],
+    [FOB_truck_typename,300,300,125],
     [KP_liberation_small_storage_building,0,0,0],
     [KP_liberation_large_storage_building,0,0,0],
     [KP_liberation_recycle_building,100,0,0],
-    [KP_liberation_air_vehicle_building,700,0,0],
-    [KP_liberation_heli_slot_building,0,0,0],
-    [KP_liberation_plane_slot_building,500,0,0],
+    [KP_liberation_air_vehicle_building,500,0,0],
+    [KP_liberation_plane_slot_building,250,0,0],
+    [KP_liberation_storage_container,10,10,0],
+    ["NORTH_CLE",10,0,0],
+    ["ACE_medicalSupplyCrate",20,0,0],
 	["LIB_AmmoCrate_Mortar_GER",0,10,0],
 	["LIB_AmmoCrate_Mortar_SU",0,10,0],
 	["LIB_AmmoCrate_Arty_SU",0,15,0],
 	["LIB_AmmoCrate_Arty_GER",0,15,0],
-	["Box_NORTH_molotov",10,20,0],
-    ["NORTH_CLE",10,0,0],
-    ["NORTH_Supplytorpedo",10,0,0],   
     ["ACE_Wheel",5,0,0],
     ["ACE_Track",5,0,0],
     ["ACE_ConcertinaWireCoil",0,0,0],
-    ["LIB_Zis6_Parm",325,0,75],
-    ["LIB_Zis5v_Fuel",125,0,275],
-    ["LIB_SdKfz_7_Ammo",125,200,75],
-	["LIB_Zis5v_Med",125,00,75],
+    ["LIB_Zis6_Parm",175,0,20],
+    ["LIB_Zis5v_Fuel",50,0,250],
+    ["LIB_SdKfz_7_Ammo",50,250,20],
+	["LIB_Zis5v_Med",150,00,20],
+    ["LIB_Willys_MB_Ambulance",145,0,75],
     ["INS_WarfareBFieldhHospital",0,0,0],           //heal
     ["Land_Workbench_01_F",100,0,0],                //repair
     ["Land_Ind_TankSmall2",0,0,100],                //refuel
@@ -336,7 +328,7 @@ elite_vehicles = [
 	"LIB_FIN_Pe2_Camo",
 	"LIB_Zis5v_Fuel",
 	"LIB_Zis6_Parm",
-	"LIB_61k",
+    "LIB_FIN_PzKpfwIV_J_Camo",
 	"sab_il2_fin",
 	"LIB_Zis5v_61K_DLV",
 	"LIB_leFH18"

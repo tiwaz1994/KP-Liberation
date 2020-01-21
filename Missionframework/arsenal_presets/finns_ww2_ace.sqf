@@ -8,7 +8,6 @@ GRLIB_arsenal_weapons = [
 	"NORTH_fin_M27",
 	"NORTH_fin_m27rv",
 	"NORTH_fin_m39",
-	"GLIB_FIN_M26",
 	"NORTH_SIG_M1920",
 	"NORTH_dp27",
 	//lib weapons
@@ -35,7 +34,6 @@ GRLIB_arsenal_magazines = [
 	"NORTH_20Rnd_ls26_mag",
 	"NORTH_20Rnd_ls26_mag_Tracer",
 	"NORTH_20rnd_kp31_mag",
-	"GLIB_FIN_25Rnd_762x54mm",
 	"NORTH_50rnd_SIG_M1920_mag",
 	"NORTH_71rnd_kp31_mag",
 	"GLIB_FIN_5Rnd_762x54mm",
@@ -638,7 +636,8 @@ GRLIB_arsenal_items = [
 	"ACE_rope15",
 	"ACE_rope18",
 	"ACE_rope27",
-	"ACE_rope36"
+	"ACE_rope36",
+	"ACE_LIB_FireCord"
 ];
 
 GRLIB_arsenal_backpacks = [
@@ -653,5 +652,6 @@ GRLIB_arsenal_backpacks = [
 	"LIB_Maxim_Bag",
 	"NORTH_Maxim_Gun_Bag",
 	"NORTH_Maxim_Tripod_Bag",
-	"B_LIB_GER_LW_Paradrop"
+	"B_LIB_GER_LW_Paradrop",
+	"NORTH_nor_Telemark"
 ];

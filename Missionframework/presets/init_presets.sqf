@@ -79,12 +79,12 @@ switch (KP_liberation_preset_civilians) do {
 
 // Prices for the blufor infantry squads (supplies, ammo, fuel)
 squads = [
-    [blufor_squad_inf_light,150,0,0],
-    [blufor_squad_inf,200,50,0],
-    [blufor_squad_at,200,150,0],
-    [blufor_squad_aa,200,150,0],
-    [blufor_squad_recon,200,0,0],
-    [blufor_squad_para,200,0,0]
+    [blufor_squad_inf_light,120,50,0],
+    [blufor_squad_inf,150,100,0],
+    [blufor_squad_at,175,150,0],
+    [blufor_squad_aa,175,150,0],
+    [blufor_squad_recon,175,50,0],
+    [blufor_squad_para,160,50,0]
 ];
 
 // Classnames of objects which should be ignored when building
@@ -149,7 +149,26 @@ GRLIB_ignore_colisions_when_building = [
     "Land_WW2_Fortification_Trench_Bridge",
     "Land_WW2_Fortification_Trench_Corner_90",
     "Land_WW2_Fortification_Trench_Bunker_FFP",
-    "Land_WW2_Fortification_Trench_Wide"
+    "Land_WW2_Fortification_Trench_Wide",
+    KP_liberation_storage_container,
+    "ACE_ConcertinaWireCoil",
+    "NORTH_CLE",
+    "ACE_Wheel",
+    "ACE_Track",
+    "ACE_medicalSupplyCrate",
+    "LIB_AmmoCrate_Mortar_GER",
+    "LIB_AmmoCrate_Mortar_SU",
+    "LIB_AmmoCrate_Arty_SU",
+    "LIB_AmmoCrate_Arty_GER",
+    "Box_NORTH_molotov",
+    "NORTH_Maxim",
+    "LIB_SU_SearchLight",
+    "LIB_Maxim_M30_base",
+    "Land_WW2_Trench76",
+    "Land_WW2_Trench_Mortar",
+    "Land_WW2_TrenchTank",
+    "Land_WW2_TrenchMG",
+    "Land_WW2_Big_Infantry_Trench"
 ];
 
 
@@ -193,7 +212,7 @@ opfor_choppers = opfor_choppers select {[_x] call F_checkClass};
 opfor_air = opfor_air select {[_x] call F_checkClass};
 civilians = civilians select {[_x] call F_checkClass};
 civilian_vehicles = civilian_vehicles select {[_x] call F_checkClass};
-military_alphabet = ["Alpha","Bravo","Charlie","Delta","Echo","Foxtrot","Golf","Hotel","India","Juliet","Kilo","Lima","Mike","November","Oscar","Papa","Quebec","Romeo","Sierra","Tango","Uniform","Victor","Whiskey","X-Ray","Yankee","Zulu"];
+military_alphabet = ["Aarne","Bertta","Celsius","Daavid","Eemeli","Faarao","Gideon","Heikki","Iivari","Jussi","Kalle","Lauri","Matti","Niilo","Otto","Paavo","Kuu","Risto","Sakari","Tyyne","Urho","Vihtori","Viski","Äksä","Yrjö","Zeta"];
 land_vehicles_classnames = (opfor_vehicles + militia_vehicles);
 opfor_squad_8_standard = [opfor_squad_leader,opfor_team_leader,opfor_rifleman,opfor_medic,opfor_heavygunner,opfor_at,opfor_rifleman,opfor_rpg];
 opfor_squad_8_infkillers = [opfor_squad_leader,opfor_machinegunner,opfor_marksman,opfor_medic,opfor_rifleman,opfor_rpg,opfor_sniper];
